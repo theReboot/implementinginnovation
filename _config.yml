@@ -2,7 +2,7 @@
 title: Implementing Innovation
 email: hello@reboot.org
 url: http://thereboot.github.io/implementinginnovation/
-baseurl: http://thereboot.github.io/implementinginnovation/
+baseurl: /implementinginnovation/
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
