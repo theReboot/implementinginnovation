@@ -204,7 +204,7 @@ a:focus {
 }
 
 .intro .lightbulbs {
-    width: 75rem;
+    width: 65rem;
     margin: auto;
     display: block;
 }
@@ -216,7 +216,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 10rem;
+        font-size: 9rem;
     }
 
     .intro .intro-body .intro-text {
@@ -419,8 +419,9 @@ body {
 button.download {
 	background: #999;
 	border: 2px solid black;
+	margin: 3rem auto;
 }
 
-button.download a {
+a button.download {
 	color: #fff;
 }
