@@ -9,7 +9,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- @font-face {
+ @font-face { 
   font-family: 'Heuristica';
   font-weight: 500;
   font-style: normal;
@@ -211,7 +211,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 9rem;
+        font-size: 8.5rem;
     }
 
     .intro .intro-body .intro-text {
