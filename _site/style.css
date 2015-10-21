@@ -391,6 +391,8 @@ ul.banner-social-buttons li {
 
 footer {
     padding: 50px 0;
+    background: #F0F5F5;
+    color: #3F4251;
 }
 
 footer p {
@@ -429,4 +431,20 @@ button.download {
 
 a button.download {
 	color: #fff;
+}
+
+.contact-section {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    color: #000;
+    background: #F0F5F5;
+}
+
+.contact-section .row {
+	margin: 0;
+}
+
+#about {
+	padding-bottom: 10rem;
 }
