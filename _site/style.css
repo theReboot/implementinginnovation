@@ -226,6 +226,11 @@ a:focus {
     font-size: 5rem;
     line-height: 1;
     color: #3F4251;
+	font-family: 'Heuristica';
+	letter-spacing: -.04rem;
+	font-weight: 700;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
 }
 
 .intro .intro-body .intro-text {
