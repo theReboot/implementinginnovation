@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Implementing Innovation" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:url" content="http://implementinginnovation.org" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="http://implementinginnovation.org/img/lightbulb_icon.png" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="{{ site.description }}"/>
+    <meta name="twitter:title" content="{{ site.title }}"/>
+    <meta name="twitter:site" content="@theReboot"/>
+    <meta name="twitter:domain" content="Implementing Innovation"/>
+    <meta name="twitter:image" content="http://implementinginnovation.org/img/lightbulb_icon.png"/>
 
     <link rel="stylesheet" href="{{site.baseurl}}/style.css">
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link rel="image_src" href="{{site.baseurl}}/img/lightbulb_icon.png">
+    <link rel="image_src" href="http://implementinginnovation.org/img/lightbulb_icon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,5 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    
 
 </head>
