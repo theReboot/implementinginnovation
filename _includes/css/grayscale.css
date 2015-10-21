@@ -9,26 +9,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- @font-face { 
+@font-face { 
   font-family: 'Heuristica';
   font-weight: 500;
   font-style: normal;
-  src: url('fonts/heuristica-regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/heuristica-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/heuristica-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/heuristica-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/heuristica-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('css/fonts/heuristica-regular.eot'); /* IE9 Compat Modes */
+  src: url('css/fonts/heuristica-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('css/fonts/heuristica-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('css/fonts/heuristica-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('css/fonts/heuristica-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'Heuristica';
   font-weight: 700;
   font-style: normal;
-  src: url('fonts/heuristica-bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/heuristica-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/heuristica-bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/heuristica-bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/heuristica-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('css/fonts/heuristica-bold.eot'); /* IE9 Compat Modes */
+  src: url('css/fonts/heuristica-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('css/fonts/heuristica-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('css/fonts/heuristica-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('css/fonts/heuristica-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 img {
@@ -116,7 +116,6 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -124,8 +123,16 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom a {
-    color: #fff;
+@media(min-width:767px) {
+
+	.navbar-custom a {
+	    color: #3F4251;
+	}
+
+	.top-nav-collapse a {
+	    color: #fff;
+	}
+
 }
 
 .navbar-custom .nav li.active {
@@ -160,6 +167,7 @@ a:focus {
     .top-nav-collapse {
         padding: 0;
         background-color: #3F4251;
+        color: #3F4251;
     }
 
     .navbar-custom.top-nav-collapse {
