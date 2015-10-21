@@ -414,6 +414,7 @@ footer {
 
 footer p {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 ::-moz-selection {
@@ -468,4 +469,9 @@ body {
 
 #about {
 	padding-bottom: 10rem;
+}
+
+.footerlogo {
+	width: 20rem;
+	margin: 0 auto 1rem;
 }

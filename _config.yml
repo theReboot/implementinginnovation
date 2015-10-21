@@ -15,8 +15,8 @@ footer: Reboot
 social:
   - title: twitter
     url: https://twitter.com/thereboot
-  - title: github
-    url: https://github.com/thereboot
+  - title: facebook
+    url: https://www.facebook.com/Reboot-105224249553575/
 
 # Build settings
 markdown: kramdown
