@@ -172,6 +172,10 @@ a:focus {
     }
 }
 
+.navbar-header {
+	background: #3F4251;
+}
+
 .intro {
     font-family: 'Heuristica Bold';
     display: table;
@@ -218,6 +222,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    color: #3F4251;
 }
 
 .intro .lightbulbs {
