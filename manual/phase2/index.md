@@ -229,4 +229,4 @@ These potential benefits will vary based on your office and the individual’s a
 
 CEDN as a unit benefited from its direct connection to the Mexican President’s National Digital Strategy and the Open Government Partnership agenda. Innovation Agents as a program flowed from those overarching policy directives. In early conceptualizations, the team sought to emphasize even more ways Innovation Agents connected to specific aspects of executive priorities that seemed to be garnering attention. For example, a growing interest in open data (which would later be confirmed by a Presidential Decree on Open Data) inspired the more structured inclusion of open data in the prompt for individual fellowship projects. In its final permutation, the Innovation Agents program had sufficient support under broader mandates, but the early, specific connection to open data helped spur interest in collaboration from a variety of individuals and groups.
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase3)
+#Next Phase: [Program Design]({{baseurl}}/manual/phase3)

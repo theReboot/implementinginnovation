@@ -5,9 +5,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <!-- <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
-                </a> -->
+                <a class="navbar-brand page-scroll" href="{{baseurl}}/">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Implementing</span> Innovation
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,11 +18,25 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a href="{{baseurl}}/manual/">Manual</a>
+                    </li>
+                    {% if page.layout == 'default' %}
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+
+                    {% else %}
+                    <li>
+                        <a class="page-scroll" href="{{baseurl}}/#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{baseurl}}/#contact">Contact</a>
+                    </li>
+                    {% endif %}
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -197,4 +197,4 @@ It is also important that each person on your team knows exactly what he or she 
 
 The strength of Innovation Agents came from the diverse expertise of its participants: Each core team included an internal government innovator, an external social entrepreneur, and a technology development team. Each of these roles was defined at a high level, but the specific responsibilities and expectations were never clearly established. While this was by some accounts an intentional choice to allow participant ownership of the projects, it also left a great deal of room for confusion and frustration as the teams worked through their collaboration dynamics. In two of the teams, disagreements about roles and responsibilities ultimately led to the original technology team’s decision to leave the project. This caused disruptions prior to and after the change, which might have been avoided with more upfront discussion. 
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase4)
+#Next Phase: [Securing Financial Support]({{baseurl}}/manual/phase4)

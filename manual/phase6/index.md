@@ -144,4 +144,4 @@ After the kickoff, CEDN turned to running a regular program (without fanfare), a
 
 The high-profile launch inspired and energized participants as intended. However, it is a reminder to consider the unintentional expectations that may be set by a launch whose fanfare is not proportional to the plans for implementation.
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase7)
+#Next Phase: [Reflection & Feedback]({{baseurl}}/manual/phase7)

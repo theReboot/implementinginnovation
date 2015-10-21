@@ -85,4 +85,4 @@ Soliciting and listening to feedback is actually the easy part; ensuring that th
 
 Mexico’s Tripartite Secretariat for the OGP, which included CEDN, is responsible for managing the consultation process to produce the country’s National Action Plans. The Secretariat had received feedback that, while it had successfully institutionalized the participation of civil society, it was consulting the same group of national-level organizations and missing out on other diverse perspectives. CEDN, along with its counterparts in the Secretariat, took this input to heart and doubled the number of civil society organizations represented in the consultation process, including smaller and regionally-focused organizations. 
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase8)
+#Next Phase: [Implementation]({{baseurl}}/manual/phase8)

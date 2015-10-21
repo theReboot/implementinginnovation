@@ -156,5 +156,5 @@ You will need a clear vision to pitch, but do not get too attached to the specif
 
 The first permutation of Innovation Agents in the real world was a PowerPoint deck. The presentation was well-designed, polished, and professional. It included a number of tangible details, which conveyed confidence and showed that the idea was well thought-out. For example, it listed potential partners who had supported similar efforts. But it was also not yet too specific. Striking this important balance made the first presentation an effective stakeholder engagement tool. It was used as a mechanism through which potential allies could make suggestions or identify alignments with their own work, so that they could help shape the program and feel ownership over its success.
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase2)
+#Next Phase: [Securing Political Support]({{baseurl}}/manual/phase2)
 

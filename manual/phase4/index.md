@@ -87,4 +87,4 @@ i.e. trust funds, innovation funds, entrepreneurship open calls </td>
   </tr>
 </table>
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase5)
+#Next Phase: [Selecting Projects & Partners]({{baseurl}}/manual/phase5)

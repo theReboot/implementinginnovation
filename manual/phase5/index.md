@@ -72,4 +72,4 @@ Finding the right partners is a challenge that requires substantial time investm
 
 The biggest contributing factor to the success of Innovation Agents was the strategic selection of participants and projects. While every project is different, common trends emerged amongst the fellows: the most successful external fellows tended to be strong project managers, committed, and driven to their goals. Their ability to overcome challenges was crucial to pushing their projects forward. The most successful internal fellows brought complementary assets to the table. They were influential enough to have sway within their agencies, providing important bureaucratic navigation for their projects and securing the necessary institutional resources and support. Importantly, they were not so highly ranked as to be distracted by too many other responsibilities.
 
-#Next Phase: [Name of Phase]({{baseurl}}/manual/phase6)
+#Next Phase: [Planning]({{baseurl}}/manual/phase6)
