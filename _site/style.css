@@ -130,11 +130,11 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #000;
+    color: #fff;
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -164,7 +164,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #999;
+        background-color: #3F4251;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -191,6 +191,18 @@ a:focus {
 
 .introwrap {
 	text-align: center;
+}
+
+.introwrap .btn-primary {
+	background: #F0F5F5;
+	color: #3F4251;
+	border-color: #3F4251;
+}
+
+.introwrap .btn-primary:hover {
+	background: #F2A75B;
+	color: #fff;
+	border-color: #3F4251;
 }
 
 .intro .intro-body {
@@ -423,13 +435,13 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-button.download {
+.download {
 	background: #999;
 	border: 2px solid black;
 	margin: 0 auto 3rem;
 }
 
-a button.download {
+.download a {
 	color: #fff;
 }
 
@@ -439,6 +451,10 @@ a button.download {
     padding: 50px 0;
     color: #000;
     background: #F0F5F5;
+}
+
+#contact {
+	color: #3F4251;
 }
 
 .contact-section .row {
