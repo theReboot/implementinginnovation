@@ -493,6 +493,13 @@ body {
 	z-index: 5;
 }
 
+/* modernizr fallback for no VH support */
+.no-cssvhunit .rebootlogo {
+	bottom: 50px;
+	left: 50px;
+	margin-top: 0;
+}
+
 @media(max-width:767px) {
 
 	.rebootlogo {
