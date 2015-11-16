@@ -2,18 +2,9 @@
 <html>
     {% include head.html %}
     {% include nav.html %}
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 introwrap">
-                        <h1>Content here</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    {% include chaptercontent.html %}
+    <section id="content" class="phase">
+        {{content}}
+    </section>
     {% include footer.html %}
     {% include js.html %}
     </body>

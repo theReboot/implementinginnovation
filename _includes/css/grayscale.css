@@ -487,6 +487,7 @@ body {
 .phase {
 	background: #fff;
 	color: #000;
+	padding-top: 18rem;
 }
 
 .phase1 .step:first-line {
@@ -583,4 +584,17 @@ img.graphic_left {
 
 .phase1 p::selection {
   background: #F79B36;
+}
+
+.phase1 .nav_manual svg path {
+	fill: #F79B36;
+}
+
+.nav_manual svg path:hover {
+	fill: #F79B36;
+}
+
+.logo {
+	width: 22rem;
+
 }
