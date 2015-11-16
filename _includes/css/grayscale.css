@@ -484,6 +484,103 @@ body {
 	margin: 0 auto 1rem;
 }
 
+.phase {
+	background: #fff;
+	color: #000;
+}
+
+.phase1 .step:first-line {
+	color: #F79B36;
+	font-family: 'ATC Overlook', sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+
+.step {
+	font-family: 'Heuristica', Georgia, serif;
+	font-size: 4rem;
+	display: block;
+	border-bottom: 2px solid #000;
+	padding-bottom: 1rem;
+	margin-top: 4rem;
+}
+
+.principle h3 {
+	color: #445877;
+	font-weight: 500;
+}
+
+.principle h3:first-line {
+	font-family: 'ATC Overlook', sans-serif;
+	font-weight: 700;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+
+.lesson {
+	background: #3F4251;
+	color: #fff;
+	padding: 7rem 0; 
+	margin: 6rem 0 2rem;
+}
+
+.lesson h4 {
+	font-family: 'ATC Overlook', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: -.5rem;
+	letter-spacing: .2rem;
+}
+
+img.graphic_left {
+	float: left;
+	padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+@media(min-width:767px) {
+
+	.bracket_top, .bracket_bottom {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+	}
+
+}
+
+
+@media(min-width:767px) {
+
+	.phase p,
+	.phase h1,
+	.phase h2,
+	.phase h3,
+	.phase h4,
+	.phase h5 {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+}
+
+@media(max-width:766px) {
+
+	.phase p,
+	.phase h1,
+	.phase h2,
+	.phase h3,
+	.phase h4,
+	.phase h5 {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+}
+
 .phase p {
-	margin: 0 25% 1rem 25%;
+	margin-bottom: 1rem;
+}
+
+.phase1 p::selection {
+  background: #F79B36;
 }
