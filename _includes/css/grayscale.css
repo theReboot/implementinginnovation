@@ -483,3 +483,7 @@ body {
 	width: 20rem;
 	margin: 0 auto 1rem;
 }
+
+.phase p {
+	margin: 0 25% 1rem 25%;
+}
