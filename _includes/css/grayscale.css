@@ -582,7 +582,7 @@ img.graphic_left {
 	margin-bottom: 1rem;
 }
 
-.phase1 p::selection {
+.phase1 *::selection {
   background: #F79B36;
 }
 
@@ -596,5 +596,19 @@ img.graphic_left {
 
 .logo {
 	width: 22rem;
+}
 
+.phase_intro {
+	float: left;
+	width: 66%
+}
+
+.phase_checklist {
+	float: right;
+	width: 33%;
+	background: #999;
+}
+
+.clearfix {
+	clear: both;
 }
