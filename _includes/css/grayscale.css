@@ -609,6 +609,11 @@ img.graphic_center {
 	display: block;
 }
 
+img.graphic_fullbleed {
+	width: 100%;
+	margin: 1rem 0;
+}
+
 @media(min-width:767px) {
 
 	.bracket_top, .bracket_bottom {
@@ -719,6 +724,37 @@ img.graphic_center {
 	text-align: center;
 }
 
+.persona {
+	width: 80%;
+	margin: 0 auto 6rem;
+	border: 2rem solid;
+}
+
+.persona.adele {
+	border-color: #E86380;
+}
+
+.persona.scott {
+	border-color: #F79B36;
+}
+
+.persona.akito {
+	border-color: #BFD749;
+}
+
+.persona.teresa {
+	border-color: #FFCE1C;
+}
+
+.persona.ines {
+	border-color: #47B549;
+}
+
+.persona .headshot {
+	float: left;
+	width: 25rem;
+}
+
 .bracket_top {
 	margin-bottom: -2rem;
 }
@@ -728,7 +764,7 @@ img.graphic_center {
 }
 
 .principle {
-	margin: 3rem 25%;
+	margin: 5rem 25% 8rem;
 	border-left: 8px solid;
 	padding: 1rem 0 1rem 3rem;
 
