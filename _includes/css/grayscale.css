@@ -604,6 +604,11 @@ img.graphic_left {
 	padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
+img.graphic_center {
+	margin: 4rem auto;
+	display: block;
+}
+
 @media(min-width:767px) {
 
 	.bracket_top, .bracket_bottom {
