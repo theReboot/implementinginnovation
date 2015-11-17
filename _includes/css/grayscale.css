@@ -71,8 +71,8 @@ p {
 }
 
 @media(min-width:767px) {
-    p {
-        margin: 0 0 35px;
+    p, li {
+        margin: 0 0 1.8rem;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -496,6 +496,10 @@ body {
 	text-transform: uppercase;
 }
 
+.phase h2.step {
+	color: #000;
+}
+
 .phase1 .step:first-line {
 	color: #F79B36;
 }
@@ -553,7 +557,7 @@ body {
 	background: #3F4251;
 	color: #fff;
 	padding: 7rem 0; 
-	margin: 6rem 0 2rem;
+	margin: 6rem 0 6rem;
 	clear: both;
 }
 
@@ -630,7 +634,9 @@ img.graphic_fullbleed {
 	.phase h2,
 	.phase h3,
 	.phase h4,
-	.phase h5 {
+	.phase h5,
+	.phase ul,
+	.phase ol {
 		margin-left: 25%;
 		margin-right: 25%;
 	}
@@ -644,15 +650,21 @@ img.graphic_fullbleed {
 	.phase h2,
 	.phase h3,
 	.phase h4,
-	.phase h5 {
+	.phase h5,
+	.phase ul,
+	.phase ol {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
 
 }
 
+.phase h2 {
+	color: #7FBABF;
+}
+
 .phase p {
-	margin-bottom: 1rem;
+	margin-bottom: 1.8rem;
 }
 
 .phase1 *::selection {
@@ -822,6 +834,10 @@ img.graphic_fullbleed {
   float: left;
 }
 
+.col-1 {
+  width: 100%;
+}
+
 .col-3-4 {
   width: 75%;
 }
@@ -836,6 +852,29 @@ img.graphic_fullbleed {
   width: 12.5%;
 }
 
+.row {
+	clear: both;
+	margin: 0 auto 2rem;
+	border-top: 3px solid #3F4251;
+	padding-top: 1rem;
+}
+
 .table {
-	margin: 0 25%;
+	margin: 2rem auto;
+	width: 55%;
+	padding: 3rem;
+	background: #DBE8E9;
+}
+
+.table p,
+.table h2,
+.table h3,
+.table ul,
+.table ol {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.strong {
+	font-weight: 700;
 }
