@@ -506,6 +506,10 @@ body {
 	color: #FFCF1E;
 }
 
+.phase3 .step:first-line {
+	color: #E63E26;
+}
+
 .step {
 	font-family: 'Heuristica', Georgia, serif;
 	font-size: 4rem;
@@ -549,6 +553,10 @@ body {
 
 .phase2 .lesson h4 {
 	color: #FFCF1E;;
+}
+
+.phase3 .lesson h4 {
+	color: #E63E26;;
 }
 
 img.graphic_left {
@@ -605,6 +613,10 @@ img.graphic_left {
 
 .phase2 *::selection {
 	background: #FFCF1E;
+}
+
+.phase3 *::selection {
+	background: #E63E26;
 }
 
 .phase1 .nav_manual svg path {
