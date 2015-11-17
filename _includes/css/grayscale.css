@@ -490,12 +490,20 @@ body {
 	padding-top: 18rem;
 }
 
-.phase1 .step:first-line {
-	color: #F79B36;
+.step:first-line {
+	color: #999;
 	font-family: 'ATC Overlook', sans-serif;
 	font-size: 2.5rem;
 	line-height: 1.6;
 	text-transform: uppercase;
+}
+
+.phase1 .step:first-line {
+	color: #F79B36;
+}
+
+.phase2 .step:first-line {
+	color: #FFCF1E;
 }
 
 .step {
@@ -584,6 +592,10 @@ img.graphic_left {
 
 .phase1 *::selection {
   background: #F79B36;
+}
+
+.phase2 *::selection {
+	background: #FFCF1E;
 }
 
 .phase1 .nav_manual svg path {
