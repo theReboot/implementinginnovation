@@ -857,7 +857,7 @@ img.graphic_fullbleed {
   width: 12.5%;
 }
 
-.row {
+.grid .row {
 	clear: both;
 	margin: 0 auto 2rem;
 	border-top: 3px solid #3F4251;
@@ -865,7 +865,7 @@ img.graphic_fullbleed {
 }
 
 .table {
-	margin: 2rem auto;
+	margin: 3rem auto;
 	width: 55%;
 	padding: 3rem;
 	background: #DBE8E9;
@@ -874,6 +874,7 @@ img.graphic_fullbleed {
 .table p,
 .table h2,
 .table h3,
+.table h4,
 .table ul,
 .table ol {
 	margin-left: 0;
