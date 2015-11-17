@@ -537,6 +537,7 @@ body {
 	color: #fff;
 	padding: 7rem 0; 
 	margin: 6rem 0 2rem;
+	clear: both;
 }
 
 .lesson h4 {
@@ -545,6 +546,14 @@ body {
 	text-align: center;
 	margin-bottom: -.5rem;
 	letter-spacing: .2rem;
+}
+
+.phase1 .lesson h4 {
+	color: #F79B36;
+}
+
+.phase2 .lesson h4 {
+	color: #FFCF1E;;
 }
 
 img.graphic_left {
@@ -624,6 +633,18 @@ img.graphic_left {
 	float: right;
 	width: 33%;
 	background: #999;
+}
+
+.personas {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.personas img {
+	margin: 0 2%;
+	width: 15%;
+	display: inline-block;
+	text-align: center;
 }
 
 .clearfix {
