@@ -514,6 +514,22 @@ body {
 	color: #E86380;
 }
 
+.phase5 .step:first-line {
+	color: #C9549E;
+}
+
+.phase6 .step:first-line {
+	color: #6880BF;
+}
+
+.phase7 .step:first-line {
+	color: #47B549;
+}
+
+.phase8 .step:first-line {
+	color: #BFD749;
+}
+
 .step {
 	font-family: 'Heuristica', Georgia, serif;
 	font-size: 4rem;
@@ -565,6 +581,22 @@ body {
 
 .phase4 .lesson h4 {
 	color: #E86380;
+}
+
+.phase5 .lesson h4 {
+	color: #C9549E;
+}
+
+.phase6 .lesson h4 {
+	color: #6880BF;
+}
+
+.phase7 .lesson h4 {
+	color: #47B549;
+}
+
+.phase8 .lesson h4 {
+	color: #BFD749;
 }
 
 img.graphic_left {
@@ -629,6 +661,22 @@ img.graphic_left {
 
 .phase4 *::selection {
 	background: #E86380;
+}
+
+.phase5 *::selection {
+	background: #C9549E;
+}
+
+.phase6 *::selection {
+	background: #6880BF;
+}
+
+.phase7 *::selection {
+	background: #47B549;
+}
+
+.phase8 *::selection {
+	background: #BFD749;
 }
 
 .phase1 .nav_manual svg path {
