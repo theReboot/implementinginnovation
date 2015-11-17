@@ -515,6 +515,10 @@ body {
 	color: #E63E26;
 }
 
+.phase4 .step:first-line {
+	color: #E86380;
+}
+
 .step {
 	font-family: 'Heuristica', Georgia, serif;
 	font-size: 4rem;
@@ -557,11 +561,15 @@ body {
 }
 
 .phase2 .lesson h4 {
-	color: #FFCF1E;;
+	color: #FFCF1E;
 }
 
 .phase3 .lesson h4 {
-	color: #E63E26;;
+	color: #E63E26;
+}
+
+.phase4 .lesson h4 {
+	color: #E86380;
 }
 
 img.graphic_left {
@@ -624,6 +632,10 @@ img.graphic_left {
 	background: #E63E26;
 }
 
+.phase4 *::selection {
+	background: #E86380;
+}
+
 .phase1 .nav_manual svg path {
 	fill: #F79B36;
 }
@@ -659,6 +671,60 @@ img.graphic_left {
 	text-align: center;
 }
 
+.bracket_top {
+	margin-bottom: -2rem;
+}
+
+.bracket_bottom {
+	margin-top: -2rem;
+}
+
+.principle {
+	margin: 3rem 25%;
+	border-left: 8px solid;
+	padding: 1rem 0 1rem 3rem;
+
+}
+
+.phase1 .principle {
+	border-color: #F79B36;
+}
+
+.phase2 .principle {
+	border-color: #FFCE1C;
+}
+
+.phase3 .principle {
+	border-color: #E53F26;
+}
+
+.phase4 .principle {
+	border-color: #E86380;
+}
+
+.phase5 .principle {
+	border-color: #C9549E;
+}
+
+.phase6 .principle {
+	border-color: #6880BF;
+}
+
+.phase7 .principle {
+	border-color: #47B549;
+}
+
+.phase8 .principle {
+	border-color: #BFD749;
+}
+
+.principle h3,
+.principle p {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .clearfix {
 	clear: both;
 }
+
