@@ -846,26 +846,69 @@ img.graphic_fullbleed {
 	width: 80%;
 	margin: 0 auto 6rem;
 	border: 2rem solid;
+    padding: 5rem;
+}
+
+.persona h2 {
+    font-family: 'Heuristica', Georgia, serif;
+    font-size: 7rem;
+}
+
+.persona h4 {
+    font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.persona img {
+    width: 100%;
 }
 
 .persona.adele {
 	border-color: #E86380;
 }
 
+.persona.adele h2,
+.persona.adele h4 {
+    color: #E86380;
+}
+
 .persona.scott {
 	border-color: #F79B36;
+}
+
+.persona.scott h2,
+.persona.scott h4 {
+    color: #F79B36;
 }
 
 .persona.akito {
 	border-color: #BFD749;
 }
 
+.persona.akito h2,
+.persona.akito h4 {
+    color: #BFD749;
+}
+
 .persona.teresa {
 	border-color: #FFCE1C;
 }
 
+.persona.teresa h2,
+.persona.teresa h4 {
+    color: #FFCE1C;
+}
+
 .persona.ines {
 	border-color: #47B549;
+}
+
+.persona.ines h2,
+.persona.ines h4 {
+    color: #47B549;
 }
 
 .persona .headshot {
@@ -982,6 +1025,16 @@ img.graphic_fullbleed {
 .table ol {
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.persona p,
+.persona h2,
+.persona h3,
+.persona h4,
+.persona ul,
+.persona ol {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .strong {
