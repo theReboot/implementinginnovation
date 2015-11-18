@@ -727,8 +727,9 @@ img.graphic_fullbleed {
 	float: left;
 	clear: both;
 	border-bottom: 10px solid #404041;
-	padding: 18rem 12% 10rem;
+	padding: 22rem 12% 10rem;
 	margin-bottom: 7rem;
+    position: relative;
 }
 
 .phase1 .phase_intro_wrap {
@@ -929,6 +930,25 @@ img.graphic_fullbleed {
 	border-left: 8px solid;
 	padding: 1rem 0 1rem 3rem;
 
+}
+
+.phase_numeral {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 10rem;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+}
+
+.phase_number {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #404041;
+    position: absolute;
+    top: 8.5rem;
+    left: calc(5% + 34rem);
 }
 
 .phase1 .principle {
