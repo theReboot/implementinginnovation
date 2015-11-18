@@ -485,7 +485,6 @@ body {
 .phase {
 	background: #fff;
 	color: #000;
-	padding-top: 18rem;
 }
 
 .step:first-line {
@@ -661,7 +660,9 @@ img.graphic_fullbleed {
 
 .phase h1 {
 	font-family: 'Alfa Slab One', sans-serif;
+	font-size: 4.2rem;
 	text-transform: uppercase;
+	margin: 0 0 2rem;
 }
 
 .phase h2 {
@@ -716,15 +717,112 @@ img.graphic_fullbleed {
 	width: 22rem;
 }
 
-.phase_intro {
+.phase_intro_wrap {
+	background: url('../img/phaseintro_bg_1.svg') no-repeat top left;
 	float: left;
-	width: 66%
+	clear: both;
+	border-bottom: 10px solid #404041;
+	padding: 18rem 12% 10rem;
+	margin-bottom: 7rem;
+}
+
+.phase1 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_1.svg');
+}
+
+.phase2 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_2.svg');
+}
+
+.phase3 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_3.svg');
+}
+
+.phase4 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_4.svg');
+}
+
+.phase5 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_5.svg');
+}
+
+.phase6 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_6.svg');
+}
+
+.phase7 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_7.svg');
+}
+
+.phase8 .phase_intro_wrap {
+	background-image: url('../img/phaseintro_bg_8.svg');
+}
+
+.phase_intro_wrap h1,
+.phase_intro_wrap h2,
+.phase_intro_wrap h3,
+.phase_intro_wrap h4,
+.phase_intro_wrap p,
+.phase_intro_wrap ul {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.phase_intro {
+	padding-top: ;
+	float: left;
+	width: calc(100% - 43rem);
 }
 
 .phase_checklist {
+	width: 40rem;
+	background: #404041;
 	float: right;
-	width: 33%;
-	background: #999;
+	color: #fff;
+	padding: 3rem;
+	border-top: 1.5rem solid;
+}
+
+.phase1 .phase_checklist {
+	border-color: #F79B36;
+}
+
+.phase2 .phase_checklist {
+	border-color: #FFCF1E;
+}
+
+.phase3 .phase_checklist {
+	border-color: #E63E26;
+}
+
+.phase4 .phase_checklist {
+	border-color: #E86380;
+}
+
+.phase5 .phase_checklist {
+	border-color: #C9549E;
+}
+
+.phase6 .phase_checklist {
+	border-color: #6880BF;
+}
+
+.phase7 .phase_checklist {
+	border-color: #47B549;
+}
+
+.phase8 .phase_checklist {
+	border-color: #BFD749;
+}
+
+.phase_checklist ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.phase_checklist li {
+	border-bottom: 3px dotted #fff;
+	text-align: center;
 }
 
 .personas {
@@ -888,6 +986,11 @@ img.graphic_fullbleed {
 .manualnav {
 	margin: 3rem auto;
 	width: 60%;
+	max-width: 75rem;
+	position: fixed;
+	top: 11rem;
+	right: 10%;
+	z-index: 2;
 }
 
 .manualnav img {
