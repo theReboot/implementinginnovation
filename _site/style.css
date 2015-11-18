@@ -664,6 +664,11 @@ img.graphic_fullbleed {
 
 }
 
+.phase h1 {
+	font-family: 'Alfa Slab One', sans-serif;
+	text-transform: uppercase;
+}
+
 .phase h2 {
 	color: #7FBABF;
 }
