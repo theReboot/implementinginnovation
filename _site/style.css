@@ -1094,7 +1094,7 @@ img.graphic_fullbleed {
 
 .manualnav.stickit {
 	position: fixed;
-	top: 0;
+	top: -4rem;
 }
 
 .manualnav img,
