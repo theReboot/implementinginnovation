@@ -5,4 +5,14 @@
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
 
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
+    {% if page.layout == 'chapter' %}
+	<script src="{{ "/js/jquery.stickem.js" | prepend: site.baseurl }}"></script>
+    <script>
+		$(document).ready(function() {
+			$('.container').stickem();
+		});
+	</script>
+	{% else %}
+	{% endif %}
     <script src="{{ "/js/ga.js" | prepend: site.baseurl }}"></script>
+
