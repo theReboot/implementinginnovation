@@ -889,3 +889,13 @@ img.graphic_fullbleed {
 .strong {
 	font-weight: 700;
 }
+
+.manualnav {
+	margin: 3rem auto;
+	width: 60%;
+}
+
+.manualnav img {
+	width: 13.5%;
+	margin-right: -2%;
+}
