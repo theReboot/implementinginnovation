@@ -1204,6 +1204,12 @@ a svg polygon {
     color: #404041;
 }
 
+@media(max-width:767px) {
+    .manualnav p {
+        display: none;
+    }
+}
+
 .manual_intro {
     padding-top: 18rem;
 }
