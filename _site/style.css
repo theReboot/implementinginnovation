@@ -776,12 +776,25 @@ img.graphic_fullbleed {
 }
 
 .phase_checklist {
-	width: 40rem;
-	background: #404041;
+    width: 40rem;
+    background: #404041;
+    color: #fff;
+    padding: 3rem;
+    border-top: 1.5rem solid;
+    margin: 0 auto 3rem;
+}
+
+.phase_checklist li,
+.phase_checklist ul,
+.phase_checklist h4,
+.phase_checklist p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phase_intro_wrap .phase_checklist {
 	float: right;
-	color: #fff;
 	padding: 3rem;
-	border-top: 1.5rem solid;
 }
 
 .phase1 .phase_checklist {
@@ -1071,14 +1084,88 @@ img.graphic_fullbleed {
 	top: 0;
 }
 
-.manualnav img {
+.manualnav img,
+.manualnav svg {
 	width: 13.5%;
 	margin-right: -2%;
+}
+
+a svg path,
+a svg polygon { 
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.manualnav .phase1:hover {
+    fill: #F79B36;
+}
+
+.manualnav .phase2:hover {
+    fill: #FFCF1E;
+}
+
+.manualnav .phase3:hover {
+    fill: #E63E26;
+}
+
+.manualnav .phase4:hover {
+    fill: #E86380;
+}
+
+.manualnav .phase5:hover {
+    fill: #C9549E;
+}
+
+.manualnav .phase6:hover {
+    fill: #6880BF;
+}
+
+.manualnav .phase7:hover {
+    fill: #47B549;
+}
+
+.manualnav .phase8:hover {
+    fill: #BFD749;
+}
+
+.active .phase1 {
+    fill: #F79B36;
+}
+
+.active .phase2 {
+    fill: #FFCF1E;
+}
+
+.active .phase3 {
+    fill: #E63E26;
+}
+
+.active .phase4 {
+    fill: #E86380;
+}
+
+.active .phase5 {
+    fill: #C9549E;
+}
+
+.active .phase6 {
+    fill: #6880BF;
+}
+
+.active .phase7 {
+    fill: #47B549;
+}
+
+.active .phase8 {
+    fill: #BFD749;
 }
 
 .manualnav a {
 	position: relative;
 }
+
 
 .manualnav p {
 	font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
