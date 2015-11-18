@@ -1069,7 +1069,7 @@ img.graphic_fullbleed {
 	width: 60%;
 	max-width: 75rem;
 	position: absolute;
-	top: 16rem;
+	top: 9rem;
 	right: 10%;
 	z-index: 2;
 }
@@ -1093,34 +1093,42 @@ a svg polygon {
   -webkit-transition-timing-function: ease-in-out;
 }
 
+.manual_intro .manualnav .phase1,
 .manualnav .phase1:hover {
     fill: #F79B36;
 }
 
+.manual_intro .manualnav .phase2,
 .manualnav .phase2:hover {
     fill: #FFCF1E;
 }
 
+.manual_intro .manualnav .phase3,
 .manualnav .phase3:hover {
     fill: #E63E26;
 }
 
+.manual_intro .manualnav .phase4,
 .manualnav .phase4:hover {
     fill: #E86380;
 }
 
+.manual_intro .manualnav .phase5,
 .manualnav .phase5:hover {
     fill: #C9549E;
 }
 
+.manual_intro .manualnav .phase6,
 .manualnav .phase6:hover {
     fill: #6880BF;
 }
 
+.manual_intro .manualnav .phase7,
 .manualnav .phase7:hover {
     fill: #47B549;
 }
 
+.manual_intro .manualnav .phase8,
 .manualnav .phase8:hover {
     fill: #BFD749;
 }
@@ -1167,6 +1175,17 @@ a svg polygon {
 	color: #000;
 	position: absolute;
 	left: .5rem;
-	top: -2rem;
+	top: -2.5rem;
 	font-size: 1rem;
+}
+
+.manualnav h6 {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    color: #404041;
+}
+
+.manual_intro {
+    padding-top: 18rem;
 }
