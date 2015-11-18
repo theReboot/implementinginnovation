@@ -865,6 +865,11 @@ img.graphic_fullbleed {
     margin-bottom: 0;
 }
 
+.persona h3 {
+    margin: 3rem 0 1rem;
+    clear: left;
+}
+
 
 .persona img {
     width: 100%;
@@ -918,6 +923,14 @@ img.graphic_fullbleed {
 .persona .headshot {
 	float: left;
 	width: 25rem;
+}
+
+.persona .col-1-4 p {
+    font-style: italic;
+}
+
+.persona .col-3-4 {
+    padding-left: 7rem;
 }
 
 .bracket_top {
