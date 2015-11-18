@@ -501,7 +501,7 @@ body {
 }
 
 .phase h2.step {
-	color: #000;
+	color: #404041;
 }
 
 .phase1 .step:first-line {
@@ -668,6 +668,7 @@ img.graphic_fullbleed {
 	font-size: 4.2rem;
 	text-transform: uppercase;
 	margin: 0 0 2rem;
+    color: #404041;
 }
 
 .phase h2 {
