@@ -6,6 +6,7 @@
 @import 'fonts.scss'; 
 @import 'breakpoints.scss'; 
 @import 'colors.scss'; 
+@import 'grid.scss'; 
  
 img {
 	max-width: 100%;
@@ -423,6 +424,28 @@ body {
 .phase {
 	background: #fff;
 	color: #000;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    ol {
+        margin-left: 25%;
+        margin-right: 25%;
+
+        @include breakpoint(mama-bear) {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        @include breakpoint(baby-bear) {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
 }
 
 .step:first-line {
@@ -496,14 +519,18 @@ body {
 	padding: 7rem 0; 
 	margin: 6rem 0 6rem;
 	clear: both;
-}
 
-.lesson h4 {
-	font-family: 'ATC Overlook', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: -.5rem;
-	letter-spacing: .2rem;
+    @include breakpoint(baby-bear) {
+        padding: 7rem 2rem;
+    }
+
+    h4 {
+        font-family: 'ATC Overlook', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: -.5rem;
+        letter-spacing: .2rem;
+    }
 }
 
 .phase1 .lesson h4 {
@@ -538,19 +565,22 @@ body {
 	color: $phase8;
 }
 
-img.graphic_left {
-	float: left;
-	padding: 1.5rem 1.5rem 1.5rem 0;
-}
+img {
 
-img.graphic_center {
-	margin: 4rem auto;
-	display: block;
-}
+    &.graphic_left {
+    	float: left;
+    	padding: 1.5rem 1.5rem 1.5rem 0;
+    }
 
-img.graphic_fullbleed {
-	width: 100%;
-	margin: 1rem 0;
+    &.graphic_center {
+    	margin: 4rem auto;
+    	display: block;
+    }
+
+    &.graphic_fullbleed {
+    	width: 100%;
+    	margin: 1rem 0;
+    }
 }
 
 @media(min-width:767px) {
@@ -559,42 +589,46 @@ img.graphic_fullbleed {
 		width: 60%;
 		margin: 0 auto;
 		display: block;
+
+        @include breakpoint(mama-bear) {
+            width: 80%;
+        }
 	}
 
 }
 
 
-@media(min-width:767px) {
+// @media(min-width:767px) {
 
-	.phase p,
-	.phase h1,
-	.phase h2,
-	.phase h3,
-	.phase h4,
-	.phase h5,
-	.phase ul,
-	.phase ol {
-		margin-left: 25%;
-		margin-right: 25%;
-	}
+// 	.phase p,
+// 	.phase h1,
+// 	.phase h2,
+// 	.phase h3,
+// 	.phase h4,
+// 	.phase h5,
+// 	.phase ul,
+// 	.phase ol {
+// 		margin-left: 25%;
+// 		margin-right: 25%;
+// 	}
 
-}
+// }
 
-@media(max-width:766px) {
+// @media(max-width:766px) {
 
-	.phase p,
-	.phase h1,
-	.phase h2,
-	.phase h3,
-	.phase h4,
-	.phase h5,
-	.phase ul,
-	.phase ol {
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+// 	.phase p,
+// 	.phase h1,
+// 	.phase h2,
+// 	.phase h3,
+// 	.phase h4,
+// 	.phase h5,
+// 	.phase ul,
+// 	.phase ol {
+// 		margin-left: 5%;
+// 		margin-right: 5%;
+// 	}
 
-}
+// }
 
 .phase h1 {
 	font-family: 'Alfa Slab One', sans-serif;
@@ -602,6 +636,14 @@ img.graphic_fullbleed {
 	text-transform: uppercase;
 	margin: 0 0 2rem;
     color: #404041;
+
+    @include breakpoint(mama-bear) {
+        font-size: 3.7rem;
+    }
+
+    @include breakpoint(baby-bear) {
+        font-size: 3rem;
+    }
 }
 
 .phase h2 {
@@ -668,53 +710,63 @@ img.graphic_fullbleed {
 	padding: 22rem 12% 10rem;
 	margin-bottom: 7rem;
     position: relative;
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_1.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_2.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_3.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_4.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_5.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_6.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_7.svg');
+    }
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_8.svg');
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
-.phase1 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_1.svg');
-}
-
-.phase2 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_2.svg');
-}
-
-.phase3 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_3.svg');
-}
-
-.phase4 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_4.svg');
-}
-
-.phase5 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_5.svg');
-}
-
-.phase6 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_6.svg');
-}
-
-.phase7 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_7.svg');
-}
-
-.phase8 .phase_intro_wrap {
-	background-image: url('../img/phaseintro_bg_8.svg');
-}
-
-.phase_intro_wrap h1,
-.phase_intro_wrap h2,
-.phase_intro_wrap h3,
-.phase_intro_wrap h4,
-.phase_intro_wrap p,
-.phase_intro_wrap ul {
-	margin-left: 0;
-	margin-right: 0;
-}
 
 .phase_intro {
 	float: left;
 	width: calc(100% - 43rem);
+
+    @include breakpoint(mama-bear) {
+        width: 66%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+        float: none;
+    }
 }
 
 .phase_checklist {
@@ -724,6 +776,14 @@ img.graphic_fullbleed {
     padding: 3rem;
     border-top: 1.5rem solid;
     margin: 0 auto 3rem;
+
+    @include breakpoint(mama-bear) {
+        width: 33%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+    }
 
     li,
     ul,
@@ -801,6 +861,10 @@ img.graphic_fullbleed {
 	border: 2rem solid;
     padding: 5rem;
 
+    @include breakpoint(baby-bear) {
+        width: 95%;
+    }
+
     h2 {
         font-family: 'Heuristica', Georgia, serif;
         font-size: 7rem;
@@ -865,6 +929,12 @@ img.graphic_fullbleed {
     .headshot {
         float: left;
         width: 25rem;
+
+        @include breakpoint(baby-bear) {
+            float: none;
+            margin: auto;
+            width: 15rem;
+        }
     }
 
     .col-1-4 p {
@@ -873,6 +943,10 @@ img.graphic_fullbleed {
 
     .col-3-4 {
         padding-left: 7rem;
+
+        @include breakpoint(baby-bear) {
+            padding-left: 0;
+        }
     }
 }
 
@@ -888,6 +962,18 @@ img.graphic_fullbleed {
 	margin: 5rem 25% 8rem;
 	border-left: 8px solid;
 	padding: 1rem 0 1rem 3rem;
+
+    @include breakpoint(mama-bear) {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+        padding: 0;
+        padding-left: 2rem;
+        margin: 5rem auto 8rem;
+    }
 
     h3, p {
         margin-left: 0;
@@ -942,41 +1028,30 @@ img.graphic_fullbleed {
 	clear: both;
 }
 
-/* Grid */
+@include breakpoint(baby-bear) {
 
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    .col-3-4,
+    .col-1-2,
+    .col-1-4,
+    .col-1-8 {
+        width: 95%;
+        float: none;
+    }
 
-[class*='col-'] {
-  float: left;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    ol,
+    ul {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-.col-1 {
-  width: 100%;
-}
-
-.col-3-4 {
-  width: 75%;
-}
-
-.col-1-2 {
-  width: 50%;
-}
-.col-1-4 {
-  width: 25%;
-}
-.col-1-8 {
-  width: 12.5%;
-}
-
-.grid .row {
-	clear: both;
-	margin: 0 auto 2rem;
-	border-top: 3px solid #3F4251;
-	padding-top: 1rem;
 }
 
 .table {
@@ -984,9 +1059,15 @@ img.graphic_fullbleed {
 	width: 55%;
 	padding: 3rem;
 	background: #DBE8E9;
-}
 
-.table {
+    @include breakpoint(mama-bear) {
+        width: 80%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+    }
+
     p,
     h2,
     h3,

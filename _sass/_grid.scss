@@ -1,0 +1,36 @@
+/* Grid */
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-3-4 {
+  width: 75%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+.grid .row {
+	clear: both;
+	margin: 0 auto 2rem;
+	border-top: 3px solid #3F4251;
+	padding-top: 1rem;
+}
