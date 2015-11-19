@@ -720,75 +720,77 @@ img.graphic_fullbleed {
     padding: 3rem;
     border-top: 1.5rem solid;
     margin: 0 auto 3rem;
+
+    li,
+    ul,
+    h4,
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        border-bottom: 3px dotted #fff;
+        text-align: center;
+    }
+
+    .phase_intro_wrap & {
+        float: right;
+        padding: 3rem;
+    }
+
+    .phase1 & {
+        border-color: $phase1;
+    }
+
+    .phase2 & {
+        border-color: $phase2;
+    }
+
+    .phase3 & {
+        border-color: $phase3;
+    }
+
+    .phase4 & {
+        border-color: $phase4;
+    }
+
+    .phase5 & {
+        border-color: $phase5;
+    }
+
+    .phase6 & {
+        border-color: $phase6;
+    }
+
+    .phase7 & {
+        border-color: $phase7;
+    }
+
+    .phase8 & {
+        border-color: $phase8;
+    }
 }
 
-.phase_checklist li,
-.phase_checklist ul,
-.phase_checklist h4,
-.phase_checklist p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.phase_intro_wrap .phase_checklist {
-	float: right;
-	padding: 3rem;
-}
-
-.phase1 .phase_checklist {
-	border-color: $phase1;
-}
-
-.phase2 .phase_checklist {
-	border-color: $phase2;
-}
-
-.phase3 .phase_checklist {
-	border-color: $phase3;
-}
-
-.phase4 .phase_checklist {
-	border-color: $phase4;
-}
-
-.phase5 .phase_checklist {
-	border-color: $phase5;
-}
-
-.phase6 .phase_checklist {
-	border-color: $phase6;
-}
-
-.phase7 .phase_checklist {
-	border-color: $phase7;
-}
-
-.phase8 .phase_checklist {
-	border-color: $phase8;
-}
-
-.phase_checklist ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-.phase_checklist li {
-	border-bottom: 3px dotted #fff;
-	text-align: center;
-}
-
+// this is for the row of the five personas 
 .personas {
 	width: 80%;
 	margin: 0 auto;
+
+    img {
+        margin: 0 2%;
+        width: 15%;
+        display: inline-block;
+        text-align: center;
+    }
 }
 
-.personas img {
-	margin: 0 2%;
-	width: 15%;
-	display: inline-block;
-	text-align: center;
-}
-
+// this is for the individual personas
 .persona {
 	width: 80%;
 	margin: 0 auto 6rem;
@@ -817,62 +819,57 @@ img.graphic_fullbleed {
     }
 
     &.adele {
-        border-color: #E86380;
+        border-color: $pink;
+
+        h2, h4 {
+            color: $pink;
+        }
     }
-}
 
-.persona.adele h2,
-.persona.adele h4 {
-    color: #E86380;
-}
+    &.scott {
+        border-color: #F79B36;
 
-.persona.scott {
-	border-color: #F79B36;
-}
+        h2, h4 {
+            color: #F79B36;
+        }
+    }
 
-.persona.scott h2,
-.persona.scott h4 {
-    color: #F79B36;
-}
+    &.akito {
+        border-color: #BFD749;
 
-.persona.akito {
-	border-color: #BFD749;
-}
+        h2, h4 {
+            color: #BFD749;
+        }
+    }
 
-.persona.akito h2,
-.persona.akito h4 {
-    color: #BFD749;
-}
+    &.teresa {
+        border-color: #FFCE1C;
 
-.persona.teresa {
-	border-color: #FFCE1C;
-}
+        h2, h4 {
+            color: #FFCE1C;
+        }
+    }
 
-.persona.teresa h2,
-.persona.teresa h4 {
-    color: #FFCE1C;
-}
+    &.ines {
+        border-color: #47B549;
 
-.persona.ines {
-	border-color: #47B549;
-}
+        h2, h4 {
+            color: #47B549;
+        }
+    }
 
-.persona.ines h2,
-.persona.ines h4 {
-    color: #47B549;
-}
+    .headshot {
+        float: left;
+        width: 25rem;
+    }
 
-.persona .headshot {
-	float: left;
-	width: 25rem;
-}
+    .col-1-4 p {
+        font-style: italic;
+    }
 
-.persona .col-1-4 p {
-    font-style: italic;
-}
-
-.persona .col-3-4 {
-    padding-left: 7rem;
+    .col-3-4 {
+        padding-left: 7rem;
+    }
 }
 
 .bracket_top {
@@ -888,6 +885,43 @@ img.graphic_fullbleed {
 	border-left: 8px solid;
 	padding: 1rem 0 1rem 3rem;
 
+    h3, p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .phase1 & {
+        border-color: $phase1;
+    }
+
+    .phase2 & {
+        border-color: $phase2;
+    }
+
+    .phase3 & {
+        border-color: $phase3;
+    }
+
+    .phase4 & {
+        border-color: $phase4;
+    }
+
+    .phase5 & {
+        border-color: $phase5;
+    }
+
+    .phase6 & {
+        border-color: $phase6;
+    }
+
+    .phase7 & {
+        border-color: $phase7;
+    }
+
+    .phase8 & {
+        border-color: $phase8;
+    }
+
 }
 
 .phase_numeral {
@@ -899,53 +933,6 @@ img.graphic_fullbleed {
     left: 5%;
 }
 
-.phase_number {
-    font-family: 'Alfa Slab One', sans-serif;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #404041;
-    position: absolute;
-    top: 8.5rem;
-    left: calc(5% + 34rem);
-}
-
-.phase1 .principle {
-	border-color: #F79B36;
-}
-
-.phase2 .principle {
-	border-color: #FFCE1C;
-}
-
-.phase3 .principle {
-	border-color: #E53F26;
-}
-
-.phase4 .principle {
-	border-color: #E86380;
-}
-
-.phase5 .principle {
-	border-color: #C9549E;
-}
-
-.phase6 .principle {
-	border-color: #6880BF;
-}
-
-.phase7 .principle {
-	border-color: #47B549;
-}
-
-.phase8 .principle {
-	border-color: #BFD749;
-}
-
-.principle h3,
-.principle p {
-	margin-left: 0;
-	margin-right: 0;
-}
 
 .clearfix {
 	clear: both;
