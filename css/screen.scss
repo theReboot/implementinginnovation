@@ -1104,8 +1104,12 @@ img {
 	right: 10%;
 	z-index: 2;
     background: none;
-    // padding: 2rem 25% 1.5rem;
     padding: 2rem 10% 1.5rem 40%;
+
+    @include breakpoint(baby-bear) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
     &.stickit {
         position: fixed;
