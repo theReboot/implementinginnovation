@@ -79,14 +79,27 @@ a:focus {
     text-transform: uppercase;
     font-family: 'ATC Overlook', sans-serif;
     background-color: #fff;
+    padding-top: 1rem;
+    height: 12rem;
+    border-bottom: 2px solid $darkgrey;
 
     // @include breakpoint(mama-bear) {
     //     padding: 0 15%;
     // }
 
+    .container {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 100%;
+    }
+
     .navbar-brand .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
+    }
+
+    .navbar-nav {
+        margin-top: 2.5rem;
     }
 
     li a {
@@ -816,11 +829,16 @@ img {
 
     @include breakpoint(baby-bear) {
         width: 95%;
+        padding: 2.5rem;
     }
 
     h2 {
         font-family: 'Heuristica', Georgia, serif;
-        font-size: 7rem;
+        font-size: 6rem;
+
+        @include breakpoint(baby-bear) {
+            font-size: 4rem;
+        }
     }
 
     h3 {
@@ -833,6 +851,13 @@ img {
         font-size: 3rem;
         text-transform: uppercase;
         margin-bottom: 0;
+        @include breakpoint(baby-bear) {
+            font-size: 2.7rem;
+        }
+    }
+
+    p {
+        font-size: 1.7rem;
     }
 
     img {
@@ -881,12 +906,14 @@ img {
 
     .headshot {
         float: left;
-        width: 25rem;
+        width: 22rem;
+        margin-bottom: 2rem;
 
         @include breakpoint(baby-bear) {
             float: none;
-            margin: auto;
+            margin: 0 auto 2rem;
             width: 15rem;
+            display: block;
         }
     }
 
@@ -1110,44 +1137,74 @@ a svg polygon {
   -webkit-transition-timing-function: ease-in-out;
 }
 
-.manual_intro .manualnav .phase1,
-.manualnav .phase1:hover {
-    fill: $phase1;
-}
+.manualnav {
 
-.manual_intro .manualnav .phase2,
-.manualnav .phase2:hover {
-    fill: $phase2;
-}
+    .phase1:hover {
+        fill: $phase1;
+    }
 
-.manual_intro .manualnav .phase3,
-.manualnav .phase3:hover {
-    fill: $phase3;
-}
+    .phase2:hover {
+        fill: $phase2;
+    }
 
-.manual_intro .manualnav .phase4,
-.manualnav .phase4:hover {
-    fill: $phase4;
-}
+    .phase3:hover{
+        fill: $phase3;
+    }
 
-.manual_intro .manualnav .phase5,
-.manualnav .phase5:hover {
-    fill: $phase5;
-}
+    .phase4:hover {
+        fill: $phase4;
+    }
 
-.manual_intro .manualnav .phase6,
-.manualnav .phase6:hover {
-    fill: $phase6;
-}
+    .phase5:hover {
+        fill: $phase5;
+    }
 
-.manual_intro .manualnav .phase7,
-.manualnav .phase7:hover {
-    fill: $phase7;
-}
+    .phase6:hover {
+        fill: $phase6;
+    }
 
-.manual_intro .manualnav .phase8,
-.manualnav .phase8:hover {
-    fill: $phase8;
+    .phase7:hover {
+        fill: $phase7;
+    }
+
+    .phase8:hover {
+        fill: $phase8;
+    }
+
+    .manual_intro & {
+
+        .phase1 {
+            fill: $phase1;
+        }
+
+        .phase2 {
+            fill: $phase2;
+        }
+
+        .phase3 {
+            fill: $phase3;
+        }
+
+        .phase4 {
+            fill: $phase4;
+        }
+
+        .phase5 {
+            fill: $phase5;
+        }
+
+        .phase6 {
+            fill: $phase6;
+        }
+
+        .phase7 {
+            fill: $phase7;
+        }
+
+        .phase8 {
+            fill: $phase8;
+        }
+    }
 }
 
 .manual_intro {
@@ -1190,19 +1247,25 @@ a svg polygon {
 }
 
 .nextphase {
-    border: 2px solid;
+    border: 2px solid $darkgrey;
     padding: 2rem 3rem;
     text-align: center;
     margin: 2rem auto 5rem;
     max-width: 40rem;
     border-radius: 2rem;
+    display: block;
 
     h2 {
         margin: 0;
         font-size: 3rem;
 
+        &:first-line {
+            font-weight: 500;
+            color: red;
+        }
+
         a {
-        color: #fff;
+            color: #fff;
         }
     }
 
