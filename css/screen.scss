@@ -1,0 +1,1329 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+ 
+@import 'fonts.scss'; 
+@import 'colors.scss'; 
+@import 'breakpoints.scss'; 
+@import 'bootstrap3.3.2_bones.scss';
+@import 'grid.scss'; 
+ 
+img {
+	max-width: 100%;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #3F4251;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: none;
+    font-family: 'Heuristica', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2, h3, .intro-text {
+    font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+} 
+
+p, li {
+    margin: 0 0 1.8rem;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+a {
+    color: #219ab3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #11505d;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'ATC Overlook', sans-serif;
+    background-color: #fff;
+    padding-top: 1rem;
+    height: 12rem;
+    border-bottom: 2px solid $darkgrey;
+
+    // @include breakpoint(mama-bear) {
+    //     padding: 0 15%;
+    // }
+
+    .container {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 100%;
+    }
+
+    .navbar-brand .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+    }
+
+    .navbar-nav {
+        margin-top: 2.5rem;
+    }
+
+    li a {
+        color: $darkgrey;
+    }
+}
+
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.intro {
+    font-family: 'Heuristica Bold';
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #000;
+    /*background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background-color: #000000;
+    background: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.introwrap {
+	text-align: center;
+}
+
+.introwrap .btn-primary {
+	background: #F0F5F5;
+	color: #3F4251;
+	border-color: #3F4251;
+}
+
+.introwrap .btn-primary:hover {
+	background: #F2A75B;
+	color: #fff;
+	border-color: #3F4251;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 5rem;
+    line-height: 1;
+    color: #3F4251;
+	font-family: 'Heuristica';
+	letter-spacing: -.04rem;
+	font-weight: 700;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+    color: #3F4251;
+}
+
+.intro .lightbulbs {
+    width: 64rem;
+    margin: 0 auto;
+    display: block;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 8.5rem;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.content-section {
+    padding-top: 100px;
+} 
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 200px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #219ab3;
+    color: #219ab3;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #219ab3;
+    outline: 0;
+    color: #000000;
+    background-color: #219ab3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+ul.banner-social-buttons li {
+    margin-bottom: 15px;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background: $lightgrey;
+    text-align: center;
+    color: $darkgrey;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.footerlogo {
+    width: 20rem;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.5);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.download {
+	background: #999;
+	border: 2px solid black;
+	margin: 0 auto 3rem;
+}
+
+.download a {
+	color: #3F4251;
+}
+
+.contact-section {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    color: #000;
+    background: #F0F5F5;
+}
+
+#contact {
+	color: #3F4251;
+}
+
+.contact-section .row {
+	margin: 0;
+}
+
+#about {
+	padding-bottom: 10rem;
+}
+
+.phase, .manual_intro {
+	background: #fff;
+	color: #000;
+    padding-bottom: 6rem;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    ol {
+        margin-left: 25%;
+        margin-right: 25%;
+
+        @include breakpoint(mama-bear) {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        @include breakpoint(baby-bear) {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+}
+
+.fullbleed {
+    width: 100%;
+    padding: 6rem 5%;
+    background: $lightgrey;
+}
+
+.pilot {
+    width: calc(25% - 3rem);
+    background: #fff;
+    margin-left: 3rem;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    @include breakpoint(mama-bear) {
+        width: calc(50% - 3rem);
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    p,
+    h3,
+    h4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.border-top {
+    border-top: 1px solid $darkgrey;
+    padding-top: 1rem;
+    margin-top: 4rem;
+}
+
+.highlight {
+    background: $orange;
+    padding: .3rem 1rem .2rem .2rem;
+}
+
+.step:first-line {
+	color: #999;
+	font-family: 'ATC Overlook', sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+
+.phase h2.step {
+	color: $darkgrey;
+}
+
+.phase1 .step:first-line {
+	color: $phase1;
+}
+
+.phase2 .step:first-line {
+	color: $phase2;
+}
+
+.phase3 .step:first-line {
+	color: $phase3;
+}
+
+.phase4 .step:first-line {
+	color: $phase4;
+}
+
+.phase5 .step:first-line {
+	color: $phase5;
+}
+
+.phase6 .step:first-line {
+	color: $phase6;
+}
+
+.phase7 .step:first-line {
+	color: $phase7;
+}
+
+.phase8 .step:first-line {
+	color: $phase8;
+}
+
+.step {
+	font-family: 'Heuristica', Georgia, serif;
+	font-size: 4rem;
+	display: block;
+	border-bottom: 2px solid #000;
+	padding-bottom: 1rem;
+	margin-top: 4rem;
+}
+
+.principle h3 {
+	color: #445877;
+	font-weight: 500;
+}
+
+.principle h3:first-line {
+	font-family: 'ATC Overlook', sans-serif;
+	font-weight: 700;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+
+.lesson {
+	background: #3F4251;
+	color: #fff;
+	padding: 7rem 0; 
+	margin: 6rem 0 6rem;
+	clear: both;
+
+    @include breakpoint(baby-bear) {
+        padding: 7rem 2rem;
+    }
+
+    h4 {
+        font-family: 'ATC Overlook', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: -.5rem;
+        letter-spacing: .2rem;
+    }
+}
+
+.phase1 .lesson h4 {
+	color: $phase1;
+}
+
+.phase2 .lesson h4 {
+	color: $phase2;
+}
+
+.phase3 .lesson h4 {
+	color: $phase3;
+}
+
+.phase4 .lesson h4 {
+	color: $phase4;
+}
+
+.phase5 .lesson h4 {
+	color: $phase5;
+}
+
+.phase6 .lesson h4 {
+	color: $phase6;
+}
+
+.phase7 .lesson h4 {
+	color: $phase7;
+}
+
+.phase8 .lesson h4 {
+	color: $phase8;
+}
+
+img {
+
+    &.graphic_left {
+    	float: left;
+    	padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    &.graphic_center {
+    	margin: 4rem auto;
+    	display: block;
+    }
+
+    &.graphic_fullbleed {
+    	width: 100%;
+    	margin: 1rem 0;
+    }
+}
+
+@media(min-width:767px) {
+
+	.bracket_top, .bracket_bottom {
+		width: 60%;
+		margin: 0 auto;
+		display: block;
+
+        @include breakpoint(mama-bear) {
+            width: 80%;
+        }
+	}
+
+}
+
+.phase h1 {
+	font-family: 'Alfa Slab One', sans-serif;
+	font-size: 4.2rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+    color: $darkgrey;
+
+    @include breakpoint(mama-bear) {
+        font-size: 3.7rem;
+    }
+
+    @include breakpoint(baby-bear) {
+        font-size: 3rem;
+    }
+}
+
+.phase h2 {
+	color: #7FBABF;
+}
+
+.phase p {
+	margin-bottom: 1.8rem;
+}
+
+*::selection {
+
+    .phase1 & {
+        background: $phase1;
+    }
+
+    .phase2 & {
+        background: $phase2;
+    }
+
+    .phase3 & {
+        background: $phase3;
+    }
+
+    .phase4 & {
+        background: $phase4;
+    }
+
+    .phase5 & {
+        background: $phase5;
+    }
+
+    .phase6 & {
+        background: $phase6;
+    }
+
+    .phase7 & {
+        background: $phase7;
+    }
+
+    .phase8 & {
+        background: $phase8;
+    }
+}
+
+
+.phase1 .nav_manual svg path {
+	fill: #F79B36;
+}
+
+.nav_manual svg path:hover {
+	fill: #F79B36;
+}
+
+.logo {
+	width: 22rem;
+}
+
+.phase_intro_wrap {
+	background: url('../img/phaseintro_bg_1.svg') no-repeat top left;
+	float: left;
+	clear: both;
+	border-bottom: 10px solid $darkgrey;
+	padding: 22rem 12% 10rem;
+	margin-bottom: 7rem;
+    position: relative;
+
+    .phase1 & {
+        background-image: url('../img/phaseintro_bg_1.svg');
+    }
+
+    .phase2 & {
+        background-image: url('../img/phaseintro_bg_2.svg');
+    }
+
+    .phase3 & {
+        background-image: url('../img/phaseintro_bg_3.svg');
+    }
+
+    .phase4 & {
+        background-image: url('../img/phaseintro_bg_4.svg');
+    }
+
+    .phase5 & {
+        background-image: url('../img/phaseintro_bg_5.svg');
+    }
+
+    .phase6 & {
+        background-image: url('../img/phaseintro_bg_6.svg');
+    }
+
+    .phase7 & {
+        background-image: url('../img/phaseintro_bg_7.svg');
+    }
+
+    .phase8 & {
+        background-image: url('../img/phaseintro_bg_8.svg');
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+.phase_intro {
+	float: left;
+	width: calc(100% - 43rem);
+
+    @include breakpoint(mama-bear) {
+        width: 66%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+        float: none;
+    }
+}
+
+.phase_checklist {
+    width: 40rem;
+    background: $darkgrey;
+    color: #fff;
+    padding: 3rem;
+    border-top: 1.5rem solid;
+    margin: 0 auto 3rem;
+
+    @include breakpoint(mama-bear) {
+        width: 33%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+    }
+
+    li,
+    ul,
+    h4,
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        border-bottom: 3px dotted #fff;
+        text-align: center;
+    }
+
+    .phase_intro_wrap & {
+        float: right;
+        padding: 3rem;
+    }
+
+    .phase1 & {
+        border-color: $phase1;
+    }
+
+    .phase2 & {
+        border-color: $phase2;
+    }
+
+    .phase3 & {
+        border-color: $phase3;
+    }
+
+    .phase4 & {
+        border-color: $phase4;
+    }
+
+    .phase5 & {
+        border-color: $phase5;
+    }
+
+    .phase6 & {
+        border-color: $phase6;
+    }
+
+    .phase7 & {
+        border-color: $phase7;
+    }
+
+    .phase8 & {
+        border-color: $phase8;
+    }
+}
+
+// this is for the row of the five personas 
+.personas {
+	width: 80%;
+	margin: 0 auto;
+
+    img {
+        margin: 0 2%;
+        width: 15%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+// this is for the individual personas
+.persona {
+	width: 80%;
+	margin: 0 auto 6rem;
+	border: 2rem solid;
+    padding: 5rem;
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+        padding: 2.5rem;
+    }
+
+    h2 {
+        font-family: 'Heuristica', Georgia, serif;
+        font-size: 6rem;
+
+        @include breakpoint(baby-bear) {
+            font-size: 4rem;
+        }
+    }
+
+    h3 {
+        margin: 3rem 0 1rem;
+        clear: left;
+    }
+
+    h4 {
+        font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @include breakpoint(baby-bear) {
+            font-size: 2.7rem;
+        }
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &.adele {
+        border-color: $pink;
+
+        h2, h4 {
+            color: $pink;
+        }
+    }
+
+    &.scott {
+        border-color: #F79B36;
+
+        h2, h4 {
+            color: #F79B36;
+        }
+    }
+
+    &.akito {
+        border-color: #BFD749;
+
+        h2, h4 {
+            color: #BFD749;
+        }
+    }
+
+    &.teresa {
+        border-color: #FFCE1C;
+
+        h2, h4 {
+            color: #FFCE1C;
+        }
+    }
+
+    &.ines {
+        border-color: #47B549;
+
+        h2, h4 {
+            color: #47B549;
+        }
+    }
+
+    .headshot {
+        float: left;
+        width: 22rem;
+        margin-bottom: 2rem;
+
+        @include breakpoint(baby-bear) {
+            float: none;
+            margin: 0 auto 2rem;
+            width: 15rem;
+            display: block;
+        }
+    }
+
+    .col-1-4 p {
+        font-style: italic;
+    }
+
+    .col-3-4 {
+        padding-left: 7rem;
+
+        @include breakpoint(baby-bear) {
+            padding-left: 0;
+        }
+    }
+}
+
+.bracket_top {
+	margin-bottom: -2rem;
+}
+
+.bracket_bottom {
+	margin-top: -2rem;
+}
+
+.principle {
+	margin: 5rem 25% 8rem;
+	border-left: 8px solid;
+	padding: 1rem 0 1rem 3rem;
+
+    @include breakpoint(mama-bear) {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+        padding: 0;
+        padding-left: 2rem;
+        margin: 5rem auto 8rem;
+    }
+
+    h3, p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .phase1 & {
+        border-color: $phase1;
+    }
+
+    .phase2 & {
+        border-color: $phase2;
+    }
+
+    .phase3 & {
+        border-color: $phase3;
+    }
+
+    .phase4 & {
+        border-color: $phase4;
+    }
+
+    .phase5 & {
+        border-color: $phase5;
+    }
+
+    .phase6 & {
+        border-color: $phase6;
+    }
+
+    .phase7 & {
+        border-color: $phase7;
+    }
+
+    .phase8 & {
+        border-color: $phase8;
+    }
+
+}
+
+.phase_numeral {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 10rem;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+}
+
+
+.clearfix {
+	clear: both;
+}
+
+@include breakpoint(baby-bear) {
+
+    .col-3-4,
+    .col-1-2,
+    .col-1-4,
+    .col-1-8 {
+        width: 95%;
+        float: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    ol,
+    ul {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+.table {
+	margin: 3rem auto;
+	width: 55%;
+	padding: 3rem;
+	background: $lightgrey;
+
+    @include breakpoint(mama-bear) {
+        width: 80%;
+    }
+
+    @include breakpoint(baby-bear) {
+        width: 95%;
+    }
+
+    p,
+    h2,
+    h3,
+    h4,
+    ul,
+    ol {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.persona {
+    p,
+    h2,
+    h3,
+    h4,
+    ul,
+    ol {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.manualnav {
+	margin: 0 auto;
+	width: 100%;
+	position: absolute;
+	top: 16rem;
+    left: 0;
+	right: 10%;
+	z-index: 2;
+    background: none;
+    padding: 2rem 10% 1.5rem 40%;
+
+    @include breakpoint(baby-bear) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    &.stickit {
+        position: fixed;
+        top: 0rem;
+        background: #fff;
+        box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
+    }
+
+    a {
+        position: relative;
+    }
+
+    p {
+        font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #000;
+        position: absolute;
+        left: .5rem;
+        top: -2.5rem;
+        font-size: 1rem;
+
+        @include breakpoint(mama-bear) {
+            display: none;
+        }
+        
+        @include breakpoint(baby-bear) {
+            display: none;
+        }
+    }
+
+    h6 {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        color: $darkgrey;
+        background: #fff;
+    }
+
+    svg, img {
+        width: 13.5%;
+        margin-right: -2%;
+    }
+}
+
+a svg path,
+a svg polygon { 
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.manualnav {
+
+    .phase1:hover {
+        fill: $phase1;
+    }
+
+    .phase2:hover {
+        fill: $phase2;
+    }
+
+    .phase3:hover{
+        fill: $phase3;
+    }
+
+    .phase4:hover {
+        fill: $phase4;
+    }
+
+    .phase5:hover {
+        fill: $phase5;
+    }
+
+    .phase6:hover {
+        fill: $phase6;
+    }
+
+    .phase7:hover {
+        fill: $phase7;
+    }
+
+    .phase8:hover {
+        fill: $phase8;
+    }
+
+    .manual_intro & {
+
+        .phase1 {
+            fill: $phase1;
+        }
+
+        .phase2 {
+            fill: $phase2;
+        }
+
+        .phase3 {
+            fill: $phase3;
+        }
+
+        .phase4 {
+            fill: $phase4;
+        }
+
+        .phase5 {
+            fill: $phase5;
+        }
+
+        .phase6 {
+            fill: $phase6;
+        }
+
+        .phase7 {
+            fill: $phase7;
+        }
+
+        .phase8 {
+            fill: $phase8;
+        }
+    }
+}
+
+.manual_intro {
+    padding-top: 18rem;
+}
+
+.active {
+
+    .phase1 {
+        fill: $phase1;
+    }
+
+    .phase2 {
+        fill: $phase2;
+    }
+
+    .phase3 {
+        fill: $phase3;
+    }
+
+    .phase4 {
+        fill: $phase4;
+    }
+
+    .phase5 {
+        fill: $phase5;
+    }
+
+    .phase6 {
+        fill: $phase6;
+    }
+
+    .phase7 {
+        fill: $phase7;
+    }
+
+    .phase8 {
+        fill: $phase8;
+    }
+}
+
+.nextphase {
+    border: 2px solid $darkgrey;
+    padding: 2rem 3rem;
+    text-align: center;
+    margin: 2rem auto 5rem;
+    max-width: 40rem;
+    border-radius: 2rem;
+    display: block;
+
+    h2 {
+        margin: 0;
+        font-size: 3rem;
+
+        &:first-line {
+            font-weight: 500;
+            color: red;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &.phase1 {
+        background: $phase1;
+    }
+
+    &.phase2 {
+        background: $phase2;
+    }
+
+    &.phase3 {
+        background: $phase3;
+    }
+
+    &.phase4 {
+        background: $phase4;
+    }
+
+    &.phase5 {
+        background: $phase5;
+    }
+
+    &.phase6 {
+        background: $phase6;
+    }
+
+    &.phase7 {
+        background: $phase7;
+    }
+
+    &.phase8 {
+        background: $phase8;
+    }
+}
+
+

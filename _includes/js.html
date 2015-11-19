@@ -1,6 +1,22 @@
-    <script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
+    {% if page.layout == 'chapter' %}
+	<script src="{{ "/js/jquery.stickem.js" | prepend: site.baseurl }}"></script>
+    <script>
+		$(document).ready(function() {
+			$('.phase').stickem();
+
+$( ".manualnav a" ).mouseover(function() {
+    $( this ).find( "h6" ).css( "opacity" , "1");
+
+    }).mouseout(function() {
+        $( this ).find( "h6" ).css( "opacity" , "0");
+});
+		});
+	</script>
+	{% else %}
+	{% endif %}
     <script src="{{ "/js/ga.js" | prepend: site.baseurl }}"></script>
