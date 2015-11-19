@@ -457,7 +457,7 @@ body {
 }
 
 .phase h2.step {
-	color: #404041;
+	color: $darkgrey;
 }
 
 .phase1 .step:first-line {
@@ -635,7 +635,7 @@ img {
 	font-size: 4.2rem;
 	text-transform: uppercase;
 	margin: 0 0 2rem;
-    color: #404041;
+    color: $darkgrey;
 
     @include breakpoint(mama-bear) {
         font-size: 3.7rem;
@@ -706,7 +706,7 @@ img {
 	background: url('../img/phaseintro_bg_1.svg') no-repeat top left;
 	float: left;
 	clear: both;
-	border-bottom: 10px solid #404041;
+	border-bottom: 10px solid $darkgrey;
 	padding: 22rem 12% 10rem;
 	margin-bottom: 7rem;
     position: relative;
@@ -715,31 +715,31 @@ img {
         background-image: url('../img/phaseintro_bg_1.svg');
     }
 
-    .phase1 & {
+    .phase2 & {
         background-image: url('../img/phaseintro_bg_2.svg');
     }
 
-    .phase1 & {
+    .phase3 & {
         background-image: url('../img/phaseintro_bg_3.svg');
     }
 
-    .phase1 & {
+    .phase4 & {
         background-image: url('../img/phaseintro_bg_4.svg');
     }
 
-    .phase1 & {
+    .phase5 & {
         background-image: url('../img/phaseintro_bg_5.svg');
     }
 
-    .phase1 & {
+    .phase6 & {
         background-image: url('../img/phaseintro_bg_6.svg');
     }
 
-    .phase1 & {
+    .phase7 & {
         background-image: url('../img/phaseintro_bg_7.svg');
     }
 
-    .phase1 & {
+    .phase8 & {
         background-image: url('../img/phaseintro_bg_8.svg');
     }
 
@@ -771,7 +771,7 @@ img {
 
 .phase_checklist {
     width: 40rem;
-    background: #404041;
+    background: $darkgrey;
     color: #fff;
     padding: 3rem;
     border-top: 1.5rem solid;
@@ -1058,7 +1058,7 @@ img {
 	margin: 3rem auto;
 	width: 55%;
 	padding: 3rem;
-	background: #DBE8E9;
+	background: $lightgrey;
 
     @include breakpoint(mama-bear) {
         width: 80%;
@@ -1096,17 +1096,22 @@ img {
 }
 
 .manualnav {
-	margin: 3rem auto;
-	width: 60%;
-	max-width: 75rem;
+	margin: 0 auto;
+	width: 100%;
 	position: absolute;
-	top: 9rem;
+	top: 16rem;
+    left: 0;
 	right: 10%;
 	z-index: 2;
+    background: none;
+    // padding: 2rem 25% 1.5rem;
+    padding: 2rem 10% 1.5rem 40%;
 
     &.stickit {
         position: fixed;
-        top: -4rem;
+        top: 0rem;
+        background: #fff;
+        box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
     }
 
     a {
@@ -1121,6 +1126,10 @@ img {
         top: -2.5rem;
         font-size: 1rem;
 
+        @include breakpoint(mama-bear) {
+            display: none;
+        }
+        
         @include breakpoint(baby-bear) {
             display: none;
         }
@@ -1130,7 +1139,8 @@ img {
         position: absolute;
         opacity: 0;
         left: 0;
-        color: #404041;
+        color: $darkgrey;
+        background: #fff;
     }
 
     svg, img {
