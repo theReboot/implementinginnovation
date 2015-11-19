@@ -431,7 +431,7 @@ footer p {
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: rgba(255,255,255,.5);
 }
 
 img::selection {
@@ -1213,3 +1213,49 @@ a svg polygon {
 .manual_intro {
     padding-top: 18rem;
 }
+
+.nextphase {
+    border: 2px solid;
+    padding: 2rem 3rem;
+    text-align: center;
+    margin: 2rem auto 5rem;
+    max-width: 40rem;
+    border-radius: 2rem;
+}
+
+.nextphase.phase2 {
+    background: #FFCF1E;
+}
+
+.nextphase.phase3 {
+    background: #E63E26;
+}
+
+.nextphase.phase4 {
+    background: #E86380;
+}
+
+.nextphase.phase5 {
+    background: #C9549E;
+}
+
+.nextphase.phase6 {
+    background: #6880BF;
+}
+
+.nextphase.phase7 {
+    background: #47B549;
+}
+
+.nextphase.phase8 {
+    background: #BFD749;
+}
+
+.nextphase h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+.nextphase h2 a {
+    color: #fff;
+}
+
