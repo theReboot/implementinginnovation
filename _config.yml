@@ -21,3 +21,7 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
