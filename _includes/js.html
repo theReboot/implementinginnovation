@@ -1,10 +1,8 @@
-    <!-- Bootstrap Core JavaScript -->
+
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
     {% if page.layout == 'chapter' %}
 	<script src="{{ "/js/jquery.stickem.js" | prepend: site.baseurl }}"></script>
     <script>
@@ -17,11 +15,8 @@ $( ".manualnav a" ).mouseover(function() {
     }).mouseout(function() {
         $( this ).find( "h6" ).css( "opacity" , "0");
 });
-
-
 		});
 	</script>
 	{% else %}
 	{% endif %}
     <script src="{{ "/js/ga.js" | prepend: site.baseurl }}"></script>
-
