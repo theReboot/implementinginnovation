@@ -1,4 +1,40 @@
 <div class="manualnav stickem">
+	<div class="phasetitle">
+
+		{% if page.active == "phase1" %}
+		<h1>Concept Development</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase2" %}
+		<h1>Securing Political Support</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase3" %}
+		<h1>Program Design</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase4" %}
+		<h1>Securing Financial Support</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase5" %}
+		<h1>Selecting Projects &amp; Partners</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase6" %}
+		<h1>Planning</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase7" %}
+		<h1>Reflection &amp; Feedback</h1>
+		{% else %}{% endif %}
+
+		{% if page.active == "phase8" %}
+		<h1>Implementation</h1>
+		{% else %}{% endif %}
+
+	</div>
+
 	<a {% if page.active == "phase1" %}class="active"{% else %}{% endif %} href="{{ site.baseurl }}/manual/phase1">
 		<p><nobr>Phase 1</nobr></p>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

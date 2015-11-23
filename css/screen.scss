@@ -1128,11 +1128,30 @@ img {
         padding-right: 5%;
     }
 
+    .phasetitle {
+        display: none;
+    }
+
     &.stickit {
         position: fixed;
         top: 0rem;
         background: #fff;
         box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
+
+        .phasetitle {
+            display: block;
+            position: absolute;
+            left: 10%;
+
+            @include breakpoint(baby-bear) {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
     }
 
     a {
