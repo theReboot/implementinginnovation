@@ -16,7 +16,7 @@ img {
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $lora;
     color: #fff;
     background-color: #3F4251;
 }
@@ -34,13 +34,17 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: none;
-    font-family: 'Heuristica', Georgia, serif;
+    font-family: $heuristica;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
+h3 {
+    line-height: 1.3;
+}
+
 h2, h3, .intro-text {
-    font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $raleway;
 }
 
 p {
@@ -75,15 +79,11 @@ a:focus {
 .navbar {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: 'ATC Overlook', sans-serif;
+    font-family: $raleway;
     background-color: #fff;
     padding-top: 1rem;
     height: 12rem;
     border-bottom: 2px solid $darkgrey;
-
-    // @include breakpoint(mama-bear) {
-    //     padding: 0 15%;
-    // }
 
     .container {
         padding-left: 12%;
@@ -112,7 +112,7 @@ a:focus {
 }
 
 .intro {
-    font-family: 'Heuristica Bold';
+    font-family: $heuristica;
     display: table;
     width: 100%;
     height: auto;
@@ -153,7 +153,7 @@ a:focus {
     font-size: 5rem;
     line-height: 1;
     color: #3F4251;
-	font-family: 'Heuristica';
+	font-family: $heuristica;
 	letter-spacing: -.04rem;
 	font-weight: 700;
 	font-style: normal;
@@ -265,7 +265,7 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $raleway;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -469,7 +469,7 @@ body {
 
 .step:first-line {
 	color: #999;
-	font-family: 'ATC Overlook', sans-serif;
+	font-family: $raleway;
 	font-size: 2.5rem;
 	line-height: 1.6;
 	text-transform: uppercase;
@@ -479,40 +479,47 @@ body {
 	color: $darkgrey;
 }
 
-.phase1 .step:first-line {
-	color: $phase1;
+.step:first-line {
+    
+    // this is only used on the manual intro page
+    color: $phase1;
+
+    .phase1 & {
+        color: $phase1;
+    }
+
+    .phase2 & {
+        color: $phase2;
+    }
+
+    .phase3 & {
+        color: $phase3;
+    }
+
+    .phase4 & {
+        color: $phase4;
+    }
+
+    .phase5 & {
+        color: $phase5;
+    }
+
+    .phase6 & {
+        color: $phase6;
+    }
+
+    .phase7 & {
+        color: $phase7;
+    }
+
+    .phase8 & {
+        color: $phase8;
+    }
 }
 
-.phase2 .step:first-line {
-	color: $phase2;
-}
-
-.phase3 .step:first-line {
-	color: $phase3;
-}
-
-.phase4 .step:first-line {
-	color: $phase4;
-}
-
-.phase5 .step:first-line {
-	color: $phase5;
-}
-
-.phase6 .step:first-line {
-	color: $phase6;
-}
-
-.phase7 .step:first-line {
-	color: $phase7;
-}
-
-.phase8 .step:first-line {
-	color: $phase8;
-}
 
 .step {
-	font-family: 'Heuristica', Georgia, serif;
+	font-family: $heuristica;
 	font-size: 4rem;
 	display: block;
 	border-bottom: 2px solid #000;
@@ -526,7 +533,7 @@ body {
 }
 
 .principle h3:first-line {
-	font-family: 'ATC Overlook', sans-serif;
+	font-family: $raleway;
 	font-weight: 700;
 	line-height: 1.6;
 	text-transform: uppercase;
@@ -544,11 +551,12 @@ body {
     }
 
     h4 {
-        font-family: 'ATC Overlook', sans-serif;
+        font-family: $raleway;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: -.5rem;
         letter-spacing: .2rem;
+        color: $phase1;
     }
 }
 
@@ -612,12 +620,13 @@ img {
         @include breakpoint(mama-bear) {
             width: 80%;
         }
+
 	}
 
 }
 
 .phase h1 {
-	font-family: 'Alfa Slab One', sans-serif;
+	font-family: $alfa;
 	font-size: 4.2rem;
 	text-transform: uppercase;
 	margin-bottom: 2rem;
@@ -853,7 +862,7 @@ img {
     }
 
     h2 {
-        font-family: 'Heuristica', Georgia, serif;
+        font-family: $heuristica;
         font-size: 6rem;
 
         @include breakpoint(baby-bear) {
@@ -867,7 +876,7 @@ img {
     }
 
     h4 {
-        font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: $raleway;
         font-size: 3rem;
         text-transform: uppercase;
         margin-bottom: 0;
@@ -952,15 +961,23 @@ img {
 
 .bracket_top {
 	margin-bottom: -2rem;
+
+    @include breakpoint(baby-bear) {
+        margin-bottom: 0;
+    }
 }
 
 .bracket_bottom {
 	margin-top: -2rem;
+
+    @include breakpoint(baby-bear) {
+        margin-top: 0;
+    }
 }
 
 .principle {
 	margin: 5rem 25% 8rem;
-	border-left: 8px solid;
+	border-left: 8px solid $phase1;
 	padding: 1rem 0 1rem 3rem;
 
     @include breakpoint(mama-bear) {
@@ -1015,7 +1032,7 @@ img {
 }
 
 .phase_numeral {
-    font-family: 'Alfa Slab One', sans-serif;
+    font-family: $alfa;
     font-size: 10rem;
     color: #fff;
     position: absolute;
@@ -1123,7 +1140,7 @@ img {
     }
 
     p {
-        font-family: 'ATC Overlook', Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: $raleway;
         color: #000;
         position: absolute;
         left: .5rem;
