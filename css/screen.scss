@@ -83,7 +83,6 @@ a:focus {
     background-color: #fff;
     padding-top: 1rem;
     height: 12rem;
-    border-bottom: 2px solid $darkgrey;
 
     .container {
         padding-left: 12%;
@@ -528,7 +527,7 @@ body {
 }
 
 .principle h3 {
-	color: #445877;
+	color: $principlecolor;
 	font-weight: 500;
 }
 
@@ -560,36 +559,40 @@ body {
     }
 }
 
-.phase1 .lesson h4 {
-	color: $phase1;
-}
+.lesson h4 {
 
-.phase2 .lesson h4 {
-	color: $phase2;
-}
+    .phase1 & {
+    	color: $phase1;
+    }
 
-.phase3 .lesson h4 {
-	color: $phase3;
-}
+    .phase2 & {
+    	color: $phase2;
+    }
 
-.phase4 .lesson h4 {
-	color: $phase4;
-}
+    .phase3 & {
+    	color: $phase3;
+    }
 
-.phase5 .lesson h4 {
-	color: $phase5;
-}
+    .phase4 & {
+    	color: $phase4;
+    }
 
-.phase6 .lesson h4 {
-	color: $phase6;
-}
+    .phase5 & {
+    	color: $phase5;
+    }
 
-.phase7 .lesson h4 {
-	color: $phase7;
-}
+    .phase6 & {
+    	color: $phase6;
+    }
 
-.phase8 .lesson h4 {
-	color: $phase8;
+    .phase7 & {
+    	color: $phase7;
+    }
+
+    .phase8 & {
+    	color: $phase8;
+    }
+
 }
 
 img {
@@ -1165,9 +1168,10 @@ img {
         left: .5rem;
         top: -2.5rem;
         font-size: 1rem;
+        text-transform: uppercase;
 
         @include breakpoint(mama-bear) {
-            display: none;
+            
         }
         
         @include breakpoint(baby-bear) {
@@ -1374,6 +1378,181 @@ a svg polygon {
 .previousphase {
     float: left;
     border-left: 0;
+}
+
+.toc {
+
+    padding: 2rem;
+    margin: 0 12%;
+
+    @include breakpoint(mama-bear) {
+        margin: 0 5%;
+    }
+
+    @include breakpoint(baby-bear) {
+        margin: 0 5%;
+    }
+
+    .col-1-4 {
+        margin-bottom: 4rem;
+        margin-left: $gutter;
+        width: calc(25% - #{$gutter});
+
+        &:first-child {
+            margin-left: 0;
+
+            @include breakpoint(baby-bear) {
+                margin-left: auto;
+            }
+        }
+
+        @include breakpoint(mama-bear) {
+            width: calc(50% - #{$gutter});
+
+            &:nth-child(3n) {
+                clear: both;
+                margin-left: 0;
+            }
+        }
+
+        @include breakpoint(baby-bear) {
+            width: 95%;
+            margin: 0 auto 5rem;
+        }
+    }
+
+    .principle {
+        border: 0;
+        margin: 0;
+        margin-bottom: 1.7rem;
+        
+        a {
+            color: $principlecolor;
+            font-family: $raleway;
+            font-weight: 500;
+        }
+    }
+
+    .lesson {
+        background: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1.7rem;
+        font-family: $lora;
+        font-style: italic;
+
+        a {
+            color: $darkgrey;
+        }
+    }
+
+    .grid {
+        clear: both;
+    }
+
+    p, h2, h4, h5 {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    p {
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        font-family: $alfa;
+        text-transform: uppercase;
+
+        a {
+            color: $darkgrey;
+        }
+    }
+
+    h4 {
+        margin: 0 0 .5rem;
+        text-transform: uppercase;
+        font-family: $raleway;
+    }
+
+    h5 {
+        font-family: $raleway;
+        font-size: 1.7rem;
+        margin: 2.5rem 0 1rem;
+        border-bottom: 1px solid $principlecolor;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        
+        &.principles {  
+            color: $principlecolor
+        }
+    }
+}
+
+// .toc .phase1 h2 a {
+//     color: $phase1;
+// }
+
+// .toc .phase2 h2 a {
+//     color: $phase2;
+// }
+
+// .toc .phase3 h2 a {
+//     color: $phase3;
+// }
+
+// .toc .phase4 h2 a {
+//     color: $phase4;
+// }
+
+// .toc .phase5 h2 a {
+//     color: $phase5;
+// }
+
+// .toc .phase6 h2 a {
+//     color: $phase6;
+// }
+
+// .toc .phase7 h2 a {
+//     color: $phase7;
+// }
+
+// .toc .phase8 h2 a {
+//     color: $phase8;
+// }
+
+.toc .phase1 h4 {
+    color: $phase1;
+}
+
+.toc .phase2 h4 {
+    color: $phase2;
+}
+
+.toc .phase3 h4 {
+    color: $phase3;
+}
+
+.toc .phase4 h4 {
+    color: $phase4;
+}
+
+.toc .phase5 h4 {
+    color: $phase5;
+}
+
+.toc .phase6 h4 {
+    color: $phase6;
+}
+
+.toc .phase7 h4 {
+    color: $phase7;
+}
+
+.toc .phase8 h4 {
+    color: $phase8;
 }
 
 
