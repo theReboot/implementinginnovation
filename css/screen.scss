@@ -144,8 +144,7 @@ a:focus {
 }
 
 .intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+    margin-top: 10rem;
 }
 
 .intro .intro-body .brand-heading {
@@ -157,11 +156,12 @@ a:focus {
 	font-weight: 700;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
+    margin-bottom: 2rem;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
-    color: #3F4251;
+    font-size: 3rem;
+    color: $darkgrey;
 }
 
 .intro .lightbulbs {
@@ -178,10 +178,6 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 8.5rem;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 25px;
     }
 }
 
@@ -715,7 +711,11 @@ img {
 }
 
 .logo {
-	width: 22rem;
+	width: 8rem;
+
+    @include breakpoint(baby-bear) {
+        width: 6rem;
+    }
 }
 
 .phase_intro_wrap {
@@ -1149,6 +1149,46 @@ img {
         padding-right: 5%;
     }
 
+    .intro & {
+        position: relative;
+        width: 80%;
+        margin: 4rem auto;
+        padding: 0;
+        max-width: 140rem;
+
+        .phase1 {
+            fill: $phase1;
+        }
+
+        .phase2 {
+            fill: $phase2;
+        }
+
+        .phase3 {
+            fill: $phase3;
+        }
+
+        .phase4 {
+            fill: $phase4; 
+        }
+
+        .phase5 {
+            fill: $phase5;
+        }
+
+        .phase6 {
+            fill: $phase6;
+        }
+
+        .phase7 {
+            fill: $phase7;
+        }
+
+        .phase8 {
+            fill: $phase8;
+        }
+    }
+
     .phasetitle {
         display: none;
     }
@@ -1203,6 +1243,11 @@ img {
         left: 0;
         color: $darkgrey;
         background: #fff;
+
+        .intro & {
+            opacity: 1;
+            text-align: center;
+        }
     }
 
     svg, img {
