@@ -491,14 +491,31 @@
 		$(document).ready(function() {
 			$('.phase').stickem();
 
-$( ".manualnav a" ).mouseover(function() {
-    $( this ).find( "h6" ).css( "opacity" , "1");
+            $( ".manualnav a" ).mouseover(function() {
+                $( this ).find( "h6" ).css( "opacity" , "1");
 
-    }).mouseout(function() {
-        $( this ).find( "h6" ).css( "opacity" , "0");
-});
+                }).mouseout(function() {
+                    $( this ).find( "h6" ).css( "opacity" , "0");
+            });
 		});
 	</script>
+    <script type="text/javascript">
+
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 150);
+            }
+        }
+
+        $(window).on("hashchange", function () {
+            offsetAnchor();
+        });
+
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1); 
+
+    </script>
 	
     <script src="/implementinginnovation/js/ga.js"></script>
     </body>
