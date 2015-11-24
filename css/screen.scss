@@ -316,13 +316,23 @@ footer {
     background: $lightgrey;
     text-align: center;
     color: $darkgrey;
-}
 
-footer p {
-    margin: 0;
-    font-size: 1.5rem;
-    float: left;
-    clear: left;
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+        float: left;
+        clear: left;
+
+        @include breakpoint(baby-bear) {
+            float: none;
+        }
+    }
+
+    .blurb {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
 }
 
 .footerlogo {
@@ -331,6 +341,10 @@ footer p {
     display: block;
     float: left;
     text-align: left;
+
+    @include breakpoint(baby-bear) {
+        float: none;
+    }
 }
 
 ::-moz-selection {
@@ -1531,5 +1545,10 @@ a svg polygon {
     float: right;
     margin-top: -23rem;
     width: 30rem;
+
+    @include breakpoint(baby-bear) {
+        float: none;
+        margin-top: 0;
+    }
 }
 
