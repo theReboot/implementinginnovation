@@ -312,7 +312,7 @@ ul.banner-social-buttons li {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 50px 15%;;
     background: $lightgrey;
     text-align: center;
     color: $darkgrey;
@@ -321,12 +321,16 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.5rem;
+    float: left;
+    clear: left;
 }
 
 .footerlogo {
     width: 20rem;
     margin: 0 auto 1rem;
     display: block;
+    float: left;
+    text-align: left;
 }
 
 ::-moz-selection {
@@ -1491,38 +1495,6 @@ a svg polygon {
     }
 }
 
-// .toc .phase1 h2 a {
-//     color: $phase1;
-// }
-
-// .toc .phase2 h2 a {
-//     color: $phase2;
-// }
-
-// .toc .phase3 h2 a {
-//     color: $phase3;
-// }
-
-// .toc .phase4 h2 a {
-//     color: $phase4;
-// }
-
-// .toc .phase5 h2 a {
-//     color: $phase5;
-// }
-
-// .toc .phase6 h2 a {
-//     color: $phase6;
-// }
-
-// .toc .phase7 h2 a {
-//     color: $phase7;
-// }
-
-// .toc .phase8 h2 a {
-//     color: $phase8;
-// }
-
 .toc .phase1 h4 {
     color: $phase1;
 }
@@ -1555,4 +1527,9 @@ a svg polygon {
     color: $phase8;
 }
 
+.buythebook {
+    float: right;
+    margin-top: -23rem;
+    width: 30rem;
+}
 
