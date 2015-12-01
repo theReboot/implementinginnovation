@@ -5,9 +5,12 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
+                {% if page.layout == 'default' %}
+                {% else %}
                 <a class="navbar-brand page-scroll" href="{{ site.baseurl }}/">
                     <img class="logo" src="{{ site.baseurl }}/img/lightbulb.svg" alt="Implementing Innovation Logo">
                 </a>
+                {% endif %}
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,25 +21,14 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="{{ site.baseurl }}/manual/">Manual</a>
-                    </li>
-                    {% if page.layout == 'default' %}
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a {% if page.nav == "manual" %}class="active"{% else %}{% endif %} href="{{ site.baseurl }}/manual/">Manual</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-
-                    {% else %}
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}/#about">About</a>
+                        <a {% if page.nav == "about" %}class="active"{% else %}{% endif %} href="{{ site.baseurl }}/about/">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}/#contact">Contact</a>
+                        <a {% if page.nav == "contact" %}class="active"{% else %}{% endif %} href="{{ site.baseurl }}/contact/">Contact</a>
                     </li>
-                    {% endif %}
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

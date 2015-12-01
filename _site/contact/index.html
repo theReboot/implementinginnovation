@@ -6,7 +6,7 @@
     <title>Implementing Innovation, A User's Manual for Open Government Programs</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="​Implementing Innovation: A User’s Manual for Open Government Programs is a hands-on resource that provides practical advice and guidance for government changemakers as they navigate the specific challenges of implementing innovative programs in the public sector.">
-    <link rel="canonical" href="/implementinginnovation/">
+    <link rel="canonical" href="/implementinginnovation/contact/">
     <link rel="image_src" href="http://implementinginnovation.org/img/lightbulb_icon.png">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Implementing Innovation" />
@@ -65,7 +65,6 @@
     
 
 </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
      <!-- Navigation -->
     <nav class="navbar" role="navigation">
         <div class="container">
@@ -74,6 +73,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 
+                <a class="navbar-brand page-scroll" href="/implementinginnovation/">
+                    <img class="logo" src="/implementinginnovation/img/lightbulb.svg" alt="Implementing Innovation Logo">
+                </a>
                 
             </div>
 
@@ -91,7 +93,7 @@
                         <a  href="/implementinginnovation/about/">About</a>
                     </li>
                     <li>
-                        <a  href="/implementinginnovation/contact/">Contact</a>
+                        <a class="active" href="/implementinginnovation/contact/">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -101,28 +103,13 @@
     </nav>
 
     
-
+   
     
 
-    <!-- Intro Header -->
-<header class="intro container">
-  <div class="intro-body grid">
-	  <div class="col-2-3">
-	    <h1 class="brand-heading">Implementing<br />Innovation</h1>
-	    <h3 class="intro-text">A User's Manual for<br />Open Government Programs</h3>
-	    <p>Implementing Innovation is a hands-on resource that provides practical advice and guidance for government changemakers as they navigate the specific challenges of implementing innovative programs in the public sector.</p>
-	  </div>
-	  <div class="col-1-3">
-	    <div class="nextphase"><a href="/implementinginnovation/manual">
-		    <h6>Get Started:</h6>
-		    <h2><a href="/implementinginnovation/manual/">Introduction</a></h2>
-	    </div>
-	  </div>
-	  <img class="col-2-3 lightbulbs" src="/implementinginnovation/img/lightbulbs.svg" />
-	  <div class="clearfix"></div>
-  </div>
-
-</header>
+    <section id="content" class="phase stickem-container">
+        
+    <div class="clearfix"></div>
+    </section>
     <!-- Footer -->
 <footer>
 	<a target="_blank" href="http://reboot.org"><img class="footerlogo" src="/implementinginnovation/img/reboot_logo.png" /></a>
@@ -140,6 +127,36 @@
     <script src="/implementinginnovation/js/grayscale.js"></script>
     <script src="/implementinginnovation/js/scripts.js"></script>
     
+	<script src="/implementinginnovation/js/jquery.stickem.js"></script>
+    <script>
+		$(document).ready(function() {
+			$('.phase').stickem();
+
+            $( ".manualnav a" ).mouseover(function() {
+                $( this ).find( "h6" ).css( "opacity" , "1");
+
+                }).mouseout(function() {
+                    $( this ).find( "h6" ).css( "opacity" , "0");
+            });
+		});
+	</script>
+    <script type="text/javascript">
+
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 150);
+            }
+        }
+
+        $(window).on("hashchange", function () {
+            offsetAnchor();
+        });
+
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1); 
+
+    </script>
 	
     <script src="/implementinginnovation/js/ga.js"></script>
     </body>

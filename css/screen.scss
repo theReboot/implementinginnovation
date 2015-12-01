@@ -81,6 +81,17 @@ a:focus {
     width: 100%;
 }
 
+// this is used by the about and contact pages
+
+.phase .default {
+    padding-top: 10rem;
+
+    h1 {
+        font-family: $heuristica;
+        text-transform: none;
+    }
+}
+
 // this is used for the navbar's fixed positioning.
 $navheight: 10rem;
 
@@ -109,6 +120,10 @@ $navheight: 10rem;
 
     li a {
         color: $darkgrey;
+
+        &.active {
+            font-weight: 700;
+        }
     }
 }
 
@@ -166,9 +181,8 @@ $navheight: 10rem;
     }
 
     .lightbulbs {
-        width: 64rem;
-        margin: 0 auto;
-        display: block;
+        width: 45em;
+        max-width: 100%;
     }
 }
 
