@@ -17,7 +17,7 @@ body {
     width: 100%;
     font-family: $lora;
     color: #fff;
-    background-color: #fff;
+    background-color: $darkgrey;
 }
 
 html {
@@ -1064,6 +1064,56 @@ img {
 	font-weight: 700;
 }
 
+.manualnav_sketch {
+    width: 100%;
+    padding: 0 12% 0 calc(12% + 2rem);
+
+    @include breakpoint(mama-bear) {
+        padding-left: calc(5% + 2rem);
+        padding-right: 5%;
+    }
+
+    a {
+        position: relative;
+
+        img {
+            width: calc(12.5% + 1.5rem);
+            margin-left: -2rem;
+        }
+    }
+
+    p {
+        font-family: $raleway;
+        color: #000;
+        position: absolute;
+        left: .5rem;
+        top: -2.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        @include breakpoint(mama-bear) {
+            
+        }
+        
+        @include breakpoint(baby-bear) {
+            display: none;
+        }
+    }
+
+    h6 {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        color: $darkgrey;
+        background: #fff;
+
+        .intro & {
+            opacity: 1;
+            text-align: center;
+        }
+    }
+}
+
 .manualnav {
 	margin: 0 auto;
 	width: 100%;
@@ -1266,7 +1316,7 @@ a svg polygon {
 }
 
 .manual_intro {
-    padding-top: 18rem;
+    padding-top: 8rem;
 }
 
 .active {
@@ -1312,6 +1362,11 @@ a svg polygon {
     margin: 2rem auto 5rem;
     max-width: 30rem;
     display: block;
+    transition: .2s all ease;
+
+    &:hover {
+        background: $lightgrey;
+    }
 
     h2 {
         margin: 0;
@@ -1441,14 +1496,6 @@ a svg polygon {
 
     .grid {
         clear: both;
-
-        // targeting the 'table of contents' title
-        > h2 {
-            font-family: $heuristica;
-            font-size: 3.5rem;
-            margin: 0 0 3rem;
-            color: #000;
-        }
     }
 
     p, h2, h4, h5 {
@@ -1465,7 +1512,6 @@ a svg polygon {
         }
     }
 
-
     h2 {
         font-size: 2.5rem;
         margin-bottom: 0;
@@ -1474,6 +1520,14 @@ a svg polygon {
         a {
             color: $darkgrey;
         }
+    }
+
+    // targeting the 'table of contents' title
+    > h2 {
+        font-family: $heuristica;
+        font-size: 3.8rem;
+        margin: 0 0 3rem;
+        color: #000;
     }
 
     h4 {
