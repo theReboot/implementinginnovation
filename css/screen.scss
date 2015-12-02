@@ -1339,6 +1339,7 @@ a svg polygon {
     text-align: left;
     margin: 2rem auto 5rem;
     max-width: 30rem;
+    min-width: 20rem;
     display: block;
     transition: .2s all ease;
     position: relative;
@@ -1426,18 +1427,17 @@ a svg polygon {
     }
 
     svg {
-        width: 32rem;
+        width: 20rem;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -18rem;
-        margin-top: -10rem;
+        left: 0;
         z-index: -1;
         transition: .2s all ease;
 
         .intro & {
+            top: 50%;
+            left: 50%;
             width: 28rem;
-            margin-left: -14rem;
+            margin-left: -15rem;
             margin-top: -9rem;
         }
 
@@ -1449,10 +1449,12 @@ a svg polygon {
 
 .nextphase {
     float: right;
+    padding-left: 0;
 }
 
 .previousphase {
     float: left;
+    padding-right: 0;
 }
 
 .toc {
@@ -1517,7 +1519,7 @@ a svg polygon {
         font-style: italic;
 
         a {
-            color: $darkgrey;
+            
         }
     }
 
@@ -1568,8 +1570,7 @@ a svg polygon {
         font-family: $raleway;
         font-size: 1.7rem;
         margin: 2.5rem 0 1rem;
-        // border-bottom: 1px solid $principlecolor;
-        // padding-bottom: 1rem;
+        color: $principlecolor;
         text-transform: uppercase;
         
         &.principles {  
