@@ -1072,10 +1072,11 @@ img {
     img {
         width: calc(12.5% + 1.5rem);
         margin-left: -2rem;
+        transition: .2s all ease;
 
-        // &:first-child {
-        //     margin-left: 0;
-        // }
+        &:hover {
+            opacity: .8;
+        }
     }
 }
 
