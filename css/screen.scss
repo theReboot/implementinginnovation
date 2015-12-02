@@ -259,6 +259,19 @@ footer {
         margin: 0 auto;
         text-align: left;
     }
+
+    ul {
+        text-align: right;
+
+        li {
+            display: inline;
+            list-style-type: none;
+            text-align: right;
+            margin-left: 2.2rem;
+            font-size: 1.6rem;
+            font-family: $raleway;
+        }
+    }
 }
 
 .footerlogo {
@@ -1322,25 +1335,36 @@ a svg polygon {
 
 
 .nextphase, .previousphase {
-    border: 2px solid $darkgrey;
     padding: 2rem 2.5rem;
     text-align: left;
     margin: 2rem auto 5rem;
     max-width: 30rem;
     display: block;
     transition: .2s all ease;
+    position: relative;
+    z-index: 2;
+    
 
     &:hover {
-        background: $lightgrey;
+        // background: $lightgrey;
+
+        svg path {
+            opacity: .8;
+        }
+
+        h2 {
+            opacity: .7;
+        }
     }
 
     h2 {
         margin: 0;
         font-size: 3rem;
         font-family: $heuristica;
+        transition: .2s all ease;
 
         a {
-            color: #000;
+            color: $darkgrey;
         }
     }
 
@@ -1354,35 +1378,72 @@ a svg polygon {
     }
 
     &.phase1 {
-        background: $phase1;
+        svg path {
+            fill: $phase1;
+        }
     }
 
     &.phase2 {
-        background: $phase2;
+        svg path {
+            fill: $phase2;
+        }
     }
 
     &.phase3 {
-        background: $phase3;
+        svg path {
+            fill: $phase3;
+        }
     }
 
     &.phase4 {
-        background: $phase4;
+        svg path {
+            fill: $phase4;
+        }
     }
 
     &.phase5 {
-        background: $phase5;
+        svg path {
+            fill: $phase5;
+        }
     }
 
     &.phase6 {
-        background: $phase6;
+        svg path {
+            fill: $phase6;
+        }
     }
 
     &.phase7 {
-        background: $phase7;
+        svg path {
+            fill: $phase7;
+        }
     }
 
     &.phase8 {
-        background: $phase8;
+        svg path {
+            fill: $phase8;
+        }
+    }
+
+    svg {
+        width: 32rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -18rem;
+        margin-top: -10rem;
+        z-index: -1;
+        transition: .2s all ease;
+
+        .intro & {
+            width: 28rem;
+            margin-left: -14rem;
+            margin-top: -9rem;
+        }
+
+        path {
+            fill: $phase1;
+        }
     }
 }
 
