@@ -1063,54 +1063,19 @@ img {
 
 .manualnav_sketch {
     width: 100%;
-    padding: 0 12% 0 calc(12% + 2rem);
+    margin: 0 0 2rem;
 
     @include breakpoint(mama-bear) {
-        padding-left: calc(5% + 2rem);
-        padding-right: 5%;
-    }
-
-    a {
-        position: relative;
-
-        img {
-            width: calc(12.5% + 1.5rem);
-            margin-left: -2rem;
-        }
-    }
-
-    p {
-        font-family: $raleway;
-        color: #000;
-        position: absolute;
-        left: .5rem;
-        top: -2.5rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-
-        // hide phase titles
-        display: none;
-
-        @include breakpoint(mama-bear) {
-            
-        }
         
-        @include breakpoint(baby-bear) {
-            display: none;
-        }
     }
 
-    h6 {
-        position: absolute;
-        opacity: 0;
-        left: 0;
-        color: $darkgrey;
-        background: #fff;
+    img {
+        width: calc(12.5% + 1.5rem);
+        margin-left: -2rem;
 
-        .intro & {
-            opacity: 1;
-            text-align: center;
-        }
+        // &:first-child {
+        //     margin-left: 0;
+        // }
     }
 }
 
@@ -1430,9 +1395,8 @@ a svg polygon {
 
 .toc {
 
-    padding: 2rem 2rem 5rem;
+    padding: 2rem 0rem 5rem;
     margin: 0 12% 5rem;
-    border-bottom: 1px solid $darkgrey;
 
     @include breakpoint(mama-bear) {
         margin: 0 5%;
@@ -1542,8 +1506,8 @@ a svg polygon {
         font-family: $raleway;
         font-size: 1.7rem;
         margin: 2.5rem 0 1rem;
-        border-bottom: 1px solid $principlecolor;
-        padding-bottom: 1rem;
+        // border-bottom: 1px solid $principlecolor;
+        // padding-bottom: 1rem;
         text-transform: uppercase;
         
         &.principles {  
@@ -1600,27 +1564,45 @@ a svg polygon {
     overflow:hidden;
 }
 
-/*----- Section Titles -----*/
+.accordion-section {
+    clear: left;
+    margin-bottom: 1rem;
+}
+
 .accordion-section-title {
     width:100%;
     display:inline-block;
     border-bottom:1px solid #1a1a1a;
     transition:all linear 0.15s;
     padding: 1rem 0;
-
-    &.active , &:hover {
-        background: $lightgrey;
-        text-decoration:none;
-    }
+    position: relative;
 }
-
 
 .accordion-section:last-child .accordion-section-title {
     border-bottom:none;
 }
 
-/*----- Section Content -----*/
 .accordion-section-content {
-    padding:15px;
+    // hide when the accordion is closed
     display:none;
+}
+
+.plus {
+    text-align: right;
+    font-size: 4rem;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    margin-top: -5.2rem;
+    transition: .2s all ease;
+    color: $darkgrey;
+
+    &:hover {
+        opacity: .6;
+    }
+
+    .active & {
+        transform: rotate(45deg);
+    }
 }

@@ -1,5 +1,7 @@
 /* Grid */
 
+$gutter: 2.5rem;
+
 .grid:after {
   content: "";
   display: table;
@@ -8,6 +10,13 @@
 
 [class*='col-'] {
   float: left;
+}
+
+[class*='col-'] {
+  padding-right: $gutter;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
 }
 
 .col-1 {
