@@ -1045,7 +1045,7 @@ img {
 	margin: 3rem auto;
 	width: 55%;
 	padding: 3rem;
-	background: $lightgrey;
+	// background: $lightgrey;
 
     @include breakpoint(mama-bear) {
         width: 80%;
@@ -1700,4 +1700,70 @@ a svg polygon {
             background: $twitterblue;
         }
     }
+}
+
+.card {
+    height: 100%;
+    min-height: 50rem;
+    margin: 0 auto 2rem;
+    position: relative;
+    margin-right: $gutter;
+    // minus 1.5 below because gutter is 3
+    width: calc(50% - 1.5rem);
+
+    @include breakpoint(mama-bear) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    @include breakpoint(mama-bear) {
+        min-height: 70rem;
+    }
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .front, .back {
+        padding: 3rem;
+    }
+
+    .front {
+        background: $lightgrey;
+        text-align: center;
+
+        p {
+            font-family: $raleway;
+            font-size: 3rem;
+            font-weight: 700;
+            padding: 1rem;
+            border: .3rem solid #000;
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .back {
+        background: #fff;
+        border: 1rem solid $darkgrey;
+
+        p {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .centerwrap {
+        position: absolute;
+        top: 49%;
+        transform: translate(0%, -50%);
+    }
+
+    
 }
