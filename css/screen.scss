@@ -110,6 +110,11 @@ $navheight: 10rem;
     top: 0;
     height: $navheight;
 
+    @include breakpoint(baby-bear) {
+        z-index: 1;
+        background: #fff;
+    }
+
     .navbar-brand .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -117,6 +122,10 @@ $navheight: 10rem;
 
     .navbar-nav {
         margin-top: 2.5rem;
+
+        @include breakpoint(baby-bear) {
+            background: #fff;
+        }
     }
 
     li a {
@@ -1713,7 +1722,7 @@ a svg polygon {
 
 .card {
     height: 100%;
-    min-height: 70rem;
+    min-height: 86rem;
     margin: 0 auto 2rem;
     position: relative;
     margin-right: $gutter;
@@ -1721,12 +1730,12 @@ a svg polygon {
     width: calc(50% - 1.5rem);
 
     @include breakpoint(mama-bear) {
-        width: 100%;
-        margin-right: 0;
+        min-height: 90rem;
     }
 
-    @include breakpoint(mama-bear) {
+    @include breakpoint(baby-bear) {
         min-height: 70rem;
+        width: 100%;
     }
 
     &:nth-child(2n) {
@@ -1859,13 +1868,14 @@ a svg polygon {
             font-family: $raleway;
             font-size: 3rem;
             font-weight: 700;
-            padding: 1rem;
+            padding: 1.6rem;
             border: .3rem solid #000;
             position: absolute;
             top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
             transition: .2s all ease;
+            line-height: 1.1;
 
             &:hover {
                 cursor: pointer;

@@ -490,11 +490,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -1809,16 +1805,6 @@ tbody.collapse.in {
   display: table-row-group;
 }
 
-@media (min-width: 768px) {
-  .navbar-right .dropdown-menu {
-    right: 0;
-    left: auto;
-  }
-  .navbar-right .dropdown-menu-left {
-    right: auto;
-    left: 0;
-  }
-}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -2346,10 +2332,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 4px;
   }
 }
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-  }
+.navbar-header {
+  float: left;
 }
 .navbar-collapse {
   padding-right: 15px;
