@@ -1724,6 +1724,84 @@ a svg polygon {
         margin-right: 0;
     }
 
+    &:nth-child(1) {
+        .front {
+            background: $phase1;
+        }
+    }
+
+    &:nth-child(2) {
+        .front {
+            background: $phase2;
+        }
+    }
+
+    &:nth-child(3) {
+        .front {
+            background: $phase3;
+        }
+    }
+
+    &:nth-child(4) {
+        .front {
+            background: $phase4;
+        }
+    }
+
+    &:nth-child(5) {
+        .front {
+            background: $phase5;
+        }
+    }
+
+    &:nth-child(6) {
+        .front {
+            background: $phase6;
+        }
+    }
+
+    &:nth-child(7) {
+        .front {
+            background: $phase7;
+        }
+    }
+
+    &:nth-child(8) {
+        .front {
+            background: $phase8;
+        }
+    }
+
+    &:nth-child(9) {
+        .front {
+            background: $phase1;
+        }
+    }
+
+    &:nth-child(10) {
+        .front {
+            background: $phase2;
+        }
+    }
+
+    &:nth-child(11) {
+        .front {
+            background: $phase3;
+        }
+    }
+
+    &:nth-child(12) {
+        .front {
+            background: $phase4;
+        }
+    }
+
+    &:hover {
+        .front p {
+            background: rgba(255,255,255,.4);
+        }
+    }
+
     .front, .back {
         padding: 3rem;
     }
@@ -1742,6 +1820,7 @@ a svg polygon {
             top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
+            transition: .2s all ease;
 
             &:hover {
                 cursor: pointer;
@@ -1766,4 +1845,12 @@ a svg polygon {
     }
 
     
+}
+
+.preface {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: $raleway;
 }
