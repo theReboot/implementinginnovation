@@ -270,6 +270,14 @@ footer {
             margin-left: 2.2rem;
             font-size: 1.6rem;
             font-family: $raleway;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: $lightgrey;
+                }
+            }
         }
     }
 }
