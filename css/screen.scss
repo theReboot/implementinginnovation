@@ -1677,3 +1677,26 @@ a svg polygon {
         transform: rotate(45deg);
     }
 }
+
+.socialshare {
+
+    margin: 0 25% 2rem;
+    font-family: $raleway;
+
+    a {
+        padding: 1rem 1.2rem;
+        color: #fff;
+
+        &:hover {
+            color: $lightgrey;
+        }
+
+        &.facebook {
+            background: $facebookblue;
+        }
+
+        &.twitter {
+            background: $twitterblue;
+        }
+    }
+}
