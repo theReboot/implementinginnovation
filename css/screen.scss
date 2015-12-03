@@ -1728,11 +1728,17 @@ a svg polygon {
         .front {
             background: $phase1;
         }
+        .back {
+            border-color: $phase1;
+        }
     }
 
     &:nth-child(2) {
         .front {
             background: $phase2;
+        }
+        .back {
+            border-color: $phase2;
         }
     }
 
@@ -1740,11 +1746,17 @@ a svg polygon {
         .front {
             background: $phase3;
         }
+        .back {
+            border-color: $phase3;
+        }
     }
 
     &:nth-child(4) {
         .front {
             background: $phase4;
+        }
+        .back {
+            border-color: $phase4;
         }
     }
 
@@ -1752,11 +1764,17 @@ a svg polygon {
         .front {
             background: $phase5;
         }
+        .back {
+            border-color: $phase5;
+        }
     }
 
     &:nth-child(6) {
         .front {
             background: $phase6;
+        }
+        .back {
+            border-color: $phase6;
         }
     }
 
@@ -1764,11 +1782,17 @@ a svg polygon {
         .front {
             background: $phase7;
         }
+        .back {
+            border-color: $phase7;
+        }
     }
 
     &:nth-child(8) {
         .front {
             background: $phase8;
+        }
+        .back {
+            border-color: $phase8;
         }
     }
 
@@ -1776,11 +1800,17 @@ a svg polygon {
         .front {
             background: $phase1;
         }
+        .back {
+            border-color: $phase1;
+        }
     }
 
     &:nth-child(10) {
         .front {
             background: $phase2;
+        }
+        .back {
+            border-color: $phase2;
         }
     }
 
@@ -1788,17 +1818,23 @@ a svg polygon {
         .front {
             background: $phase3;
         }
+        .back {
+            border-color: $phase3;
+        }
     }
 
     &:nth-child(12) {
         .front {
             background: $phase4;
         }
+        .back {
+            border-color: $phase4;
+        }
     }
 
     &:hover {
         .front p {
-            background: rgba(255,255,255,.4);
+            background: rgba(255,255,255,.5);
         }
     }
 
