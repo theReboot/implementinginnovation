@@ -84,12 +84,18 @@ a:focus {
 
 // this is used by the about and contact pages
 
-.phase .default {
+.phase .default, .essentials .default {
     padding-top: 10rem;
 
     h1 {
         font-family: $heuristica;
         text-transform: none;
+    }
+}
+
+.essentials {
+    h1 {
+        font-family: $heuristica;
     }
 }
 
@@ -118,6 +124,7 @@ $navheight: 10rem;
     .navbar-brand .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
+        float: right;
     }
 
     .navbar-nav {
@@ -136,6 +143,10 @@ $navheight: 10rem;
         }
     }
 }
+
+// .navbar-header {
+//     width: 100%;
+// }
 
 // shadow that sits above the main content section
 .navbar, .phase {
@@ -348,7 +359,7 @@ img::-moz-selection {
 	padding-bottom: 10rem;
 }
 
-.phase, .manual_intro {
+.phase, .manual_intro, .essentials {
 	background: #fff;
 	color: #000;
     padding-bottom: 6rem;
@@ -589,10 +600,12 @@ img {
 
 }
 
-.phase {
-
+.phase, .essentials {
     position: relative;
     margin-top: $navheight;
+}
+
+.phase {
 
     h1 {
     	font-family: $alfa;
@@ -1578,7 +1591,7 @@ a svg polygon {
     }
 
     h4 {
-        margin: 0 0 .5rem;
+        margin: 1rem 0 .5rem;
         text-transform: uppercase;
         font-family: $raleway;
     }
@@ -1586,7 +1599,7 @@ a svg polygon {
     h5 {
         font-family: $raleway;
         font-size: 1.7rem;
-        margin: 2.5rem 0 1rem;
+        margin: 0 0 1rem;
         color: $principlecolor;
         text-transform: uppercase;
         
@@ -1645,14 +1658,16 @@ a svg polygon {
 }
 
 .accordion-section {
+    float: left;
     clear: left;
+    width: 100%;
     margin-bottom: 1rem;
+    border-bottom: 1px solid $darkgrey;
 }
 
 .accordion-section-title {
     width:100%;
     display:inline-block;
-    border-bottom:1px solid #1a1a1a;
     transition:all linear 0.15s;
     padding: 1rem 0;
     position: relative;
@@ -1689,7 +1704,7 @@ a svg polygon {
 
 .socialshare {
 
-    margin: 0 25% 2rem;
+    margin: 3rem 25% 2rem;
     font-family: $raleway;
 
     @include breakpoint(mama-bear) {
@@ -1906,4 +1921,52 @@ a svg polygon {
     text-transform: uppercase;
     line-height: 1.2;
     font-family: $raleway;
+}
+
+.theoryofchange {
+    background: #fff;
+
+    h1 {
+        margin: 0 0 2rem;
+    }
+
+    .tocstep {
+
+        margin-bottom: 2rem;
+
+        .title {
+            border: 1px solid #000;
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        li {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    .numberblock {
+        background: #000;
+        color: #fff;
+        font-family: $heuristica;
+        padding: 2rem;
+        margin-right: 1rem;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+.grey {
+    background: $lightgrey;
+}
+
+.fullbleed_wrap {
+    width: 100%;
+    margin: 4rem 0;
+    padding: 3rem 0;
 }
