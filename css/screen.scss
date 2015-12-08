@@ -1141,16 +1141,65 @@ img {
     }
 }
 
+.manualnav_wrap {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    .phasetitle {
+        display: none;
+    }
+
+    &.stickit {
+        position: fixed;
+        top: 0rem;
+        background: #fff;
+        box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
+        padding-top: 2.5rem;
+        height: 6rem;
+
+        // remove stickem on mobile
+        @include breakpoint(baby-bear) {
+            position: relative;
+        }
+
+
+        .phasetitle {
+            display: block;
+            position: absolute;
+            left: 10%;
+
+            @include breakpoint(mama-bear) {
+                display: none;
+            }
+
+            @include breakpoint(baby-bear) {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
 .manualnav {
 	margin: 0 auto;
-	width: 100%;
 	position: absolute;
-	top: 4rem;
-    left: 0;
-	right: 10%;
-	z-index: 2;
+    max-width: 80rem;
+    width: 60%;
+    float: right;
     background: none;
-    padding: 2rem 10% 1.5rem 40%;
+    right: 10%;
+
+    @include breakpoint(mama-bear) {
+        width: 100%;
+        right: 0;
+    }
 
     @include breakpoint(baby-bear) {
         padding-left: 5%;
@@ -1197,89 +1246,6 @@ img {
             fill: $phase8;
         }
     }
-
-    .phasetitle {
-        display: none;
-    }
-
-    &.stickit {
-        position: fixed;
-        top: 0rem;
-        background: #fff;
-        box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
-
-        // remove stickem on mobile
-        @include breakpoint(baby-bear) {
-            position: relative;
-        }
-
-
-        .phasetitle {
-            display: block;
-            position: absolute;
-            left: 10%;
-
-            @include breakpoint(baby-bear) {
-                display: none;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-                margin: 0;
-            }
-        }
-    }
-
-    a {
-        position: relative;
-    }
-
-    p {
-        font-family: $raleway;
-        color: #000;
-        position: absolute;
-        left: .5rem;
-        top: -2.5rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-
-        @include breakpoint(mama-bear) {
-            
-        }
-        
-        @include breakpoint(baby-bear) {
-            display: none;
-        }
-    }
-
-    h6 {
-        position: absolute;
-        opacity: 0;
-        left: 0;
-        color: $darkgrey;
-        background: #fff;
-
-        .intro & {
-            opacity: 1;
-            text-align: center;
-        }
-    }
-
-    svg, img {
-        width: 13.5%;
-        margin-right: -2%;
-    }
-}
-
-a svg path,
-a svg polygon { 
-  transition: 150ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 150ms;
-  -webkit-transition-timing-function: ease-in-out;
-}
-
-.manualnav {
 
     .phase1:hover {
         fill: $phase1;
@@ -1347,6 +1313,54 @@ a svg polygon {
             fill: $phase8;
         }
     }
+
+    a {
+        position: relative;
+    }
+
+    p {
+        font-family: $raleway;
+        color: #000;
+        position: absolute;
+        left: .5rem;
+        top: -2.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        @include breakpoint(mama-bear) {
+            
+        }
+        
+        @include breakpoint(baby-bear) {
+            display: none;
+        }
+    }
+
+    h6 {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        color: $darkgrey;
+        background: #fff;
+
+        .intro & {
+            opacity: 1;
+            text-align: center;
+        }
+    }
+
+    svg, img {
+        width: 13.5%;
+        margin-right: -2%;
+    }
+}
+
+a svg path,
+a svg polygon { 
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
 
 .manual_intro {
