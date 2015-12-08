@@ -140,6 +140,8 @@ $navheight: 10rem;
 
         @include breakpoint(baby-bear) {
             background: #fff;
+            border: 1px solid $lightgrey;
+            border-top: 0;
         }
     }
 
@@ -152,9 +154,17 @@ $navheight: 10rem;
     }
 }
 
-// .navbar-header {
-//     width: 100%;
-// }
+.navbar-header {
+    @include breakpoint(baby-bear) {
+        width: 100%;
+    }
+}
+
+.navbar-collapse {
+    @include breakpoint(baby-bear) {
+        clear: both;
+    }
+}
 
 // shadow that sits above the main content section
 .navbar, .phase {
@@ -1145,6 +1155,7 @@ img {
     @include breakpoint(baby-bear) {
         padding-left: 5%;
         padding-right: 5%;
+        position: relative;
     }
 
     .intro & {
@@ -1196,6 +1207,12 @@ img {
         top: 0rem;
         background: #fff;
         box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
+
+        // remove stickem on mobile
+        @include breakpoint(baby-bear) {
+            position: relative;
+        }
+
 
         .phasetitle {
             display: block;
