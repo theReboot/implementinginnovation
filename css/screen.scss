@@ -98,6 +98,13 @@ a:focus {
     h1 {
         font-family: $heuristica;
     }
+
+    .thumb {
+        height: 30rem;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 // this is used for the navbar's fixed positioning.
@@ -1738,7 +1745,7 @@ a svg polygon {
 
 .card {
     height: 100%;
-    min-height: 86rem;
+    min-height: 60rem;
     margin: 0 auto 2rem;
     position: relative;
     margin-right: $gutter;
@@ -1746,7 +1753,7 @@ a svg polygon {
     width: calc(50% - 1.5rem);
 
     @include breakpoint(mama-bear) {
-        min-height: 90rem;
+        min-height: 60rem;
     }
 
     @include breakpoint(baby-bear) {
@@ -1902,6 +1909,7 @@ a svg polygon {
     .back {
         background: #fff;
         border: 1rem solid $darkgrey;
+        overflow: scroll;
 
         p {
             margin-left: 0;
