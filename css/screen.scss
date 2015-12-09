@@ -81,6 +81,24 @@ a:focus {
     padding-left: 12%;
     padding-right: 12%;
     width: 100%;
+
+    @include breakpoint(baby-bear) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar-header {
+        @include breakpoint(baby-bear) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .navbar-collapse {
+        @include breakpoint(baby-bear) {
+            clear: both;
+        }
+    }
 }
 
 // this is used by the about and contact pages
@@ -151,18 +169,6 @@ $navheight: 10rem;
         &.active {
             font-weight: 700;
         }
-    }
-}
-
-.navbar-header {
-    @include breakpoint(baby-bear) {
-        width: 100%;
-    }
-}
-
-.navbar-collapse {
-    @include breakpoint(baby-bear) {
-        clear: both;
     }
 }
 
