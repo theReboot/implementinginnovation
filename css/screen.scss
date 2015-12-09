@@ -145,12 +145,20 @@ $navheight: 10rem;
     @include breakpoint(baby-bear) {
         z-index: 1;
         background: #fff;
+        height: auto;
     }
 
-    .navbar-brand .navbar-toggle {
+    .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
         float: right;
+
+        @include breakpoint(baby-bear) {
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
     }
 
     .navbar-nav {
@@ -160,6 +168,8 @@ $navheight: 10rem;
             background: #fff;
             border: 1px solid $lightgrey;
             border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 
@@ -709,7 +719,7 @@ img {
 	width: 8rem;
 
     @include breakpoint(baby-bear) {
-        width: 6rem;
+        width: 5rem;
     }
 }
 
@@ -1164,7 +1174,7 @@ img {
         background: #fff;
         box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
         padding-top: 2.5rem;
-        height: 6rem;
+        height: 7.4rem;
 
         // remove stickem on mobile
         @include breakpoint(baby-bear) {
@@ -1197,7 +1207,7 @@ img {
 	margin: 0 auto;
 	position: absolute;
     max-width: 80rem;
-    width: 60%;
+    width: 52%;
     float: right;
     background: none;
     right: 10%;
