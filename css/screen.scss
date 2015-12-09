@@ -1985,6 +1985,14 @@ a svg polygon {
 
     table {
         border-spacing: 0;
+
+        td.numberblock {
+            width: auto;
+        }
+
+        td {
+            width: 100%;
+        }
     }
 
     h1 {
@@ -2003,6 +2011,7 @@ a svg polygon {
 
         h3 {
             margin: 0;
+            line-height: 1.2;
         }
 
         li {
