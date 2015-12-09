@@ -27,3 +27,6 @@ sass:
   style: compressed
 
 baseurl: /implementinginnovation
+
+gems:
+  - octopress-autoprefixer
