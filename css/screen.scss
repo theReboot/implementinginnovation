@@ -1982,6 +1982,10 @@ a svg polygon {
 .theoryofchange {
     background: #fff;
 
+    table {
+        border-spacing: 0;
+    }
+
     h1 {
         margin: 0 0 2rem;
     }
@@ -1997,7 +2001,7 @@ a svg polygon {
         }
 
         h3 {
-            margin: 1rem 0 0;
+            margin: 0;
         }
 
         li {
@@ -2016,6 +2020,12 @@ a svg polygon {
         text-align: center;
         float: left;
         display: block;
+    }
+
+    // Assumptions should look like a tab
+    .toc5 .title {
+        border: 0;
+        border-bottom: 1px solid #000;
     }
 }
 
