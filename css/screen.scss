@@ -1678,15 +1678,11 @@ a svg polygon {
     color: $phase8;
 }
 
-.buythebook {
-    float: right;
-    margin-top: -23rem;
-    width: 30rem;
-
-    @include breakpoint(baby-bear) {
-        float: none;
-        margin-top: 0;
-    }
+.thebook {
+    max-width: 28rem;
+    margin: 2rem auto;
+    display: block;
+    clear: both;
 }
 
 .accordion {
