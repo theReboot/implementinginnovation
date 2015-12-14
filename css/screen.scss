@@ -1603,7 +1603,7 @@ a svg polygon {
         clear: both;
     }
 
-    p, h2, h4, h5 {
+    p, h2, h4, h5, ul {
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -1652,6 +1652,11 @@ a svg polygon {
         &.principles {  
             color: $principlecolor
         }
+    }
+
+    li {
+        margin-left: 2rem;
+        list-style-type: disc;
     }
 
 }
