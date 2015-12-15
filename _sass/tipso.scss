@@ -15,7 +15,15 @@
 }
 .tipso_style{
 	cursor: pointer;
-	border-bottom: 2px dotted $phase3;
+	// border-bottom: 2px dotted $phase3;
+	// this is the phase3 color at 30%
+	background: rgba(230,62,38,.3);
+
+	// assumptions will be underlined
+	.numberblock & {
+		background: none;
+		border-bottom: 2px dotted $phase3;
+	}
 }
 .tipso_title {
 	border-radius: 6px 6px 0 0;
