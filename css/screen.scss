@@ -882,13 +882,32 @@ img {
 // this is for the row of the five personas 
 .personas {
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 4rem;
 
-    img {
+    > div {
         margin: 0 2%;
         width: 15%;
         display: inline-block;
-        text-align: center;
+        text-align: left;
+
+        img {
+            width: 100%;
+        }
+
+        p, h4 {
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 2rem;
+            font-family: $raleway;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $heuristica;
+            font-size: 2.5rem;
+        }
     }
 }
 
