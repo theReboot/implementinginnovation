@@ -346,6 +346,12 @@ footer {
 
     ul {
         text-align: right;
+        clear: both;
+
+        @include breakpoint(baby-bear) {
+            text-align: center;
+            margin: 0 auto;
+        }
 
         li {
             display: inline;
@@ -354,6 +360,11 @@ footer {
             margin-left: 2.2rem;
             font-size: 1.6rem;
             font-family: $raleway;
+
+            @include breakpoint(baby-bear) {
+                text-align: center;
+                margin: 0 auto 1rem;
+            }
 
             a {
                 color: #fff;
@@ -1756,6 +1767,15 @@ a svg polygon {
     @include breakpoint(baby-bear) {
         max-width: 24rem;
         float: none;
+    }
+
+    footer & {
+        max-width: 22rem;
+        margin-top: -13rem;
+
+        @include breakpoint(baby-bear) {
+            margin: 4rem auto 0;
+        }
     }
 }
 
