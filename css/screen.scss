@@ -143,7 +143,7 @@ $navheight: 10rem;
     height: $navheight;
 
     @include breakpoint(baby-bear) {
-        z-index: 1;
+        z-index: 5;
         background: #fff;
         height: auto;
     }
@@ -168,6 +168,7 @@ $navheight: 10rem;
         @include breakpoint(baby-bear) {
             background: #fff;
             border: 1px solid $lightgrey;
+            float: none;
             border-top: 0;
             margin-top: 0;
             padding-top: 0;
@@ -187,6 +188,10 @@ $navheight: 10rem;
 .highlightarrow {
     float: right;
     margin-top: 1rem;
+
+    @include breakpoint(baby-bear) {
+        display: none;
+    }
 }
 
 // shadow that sits above the main content section
@@ -249,12 +254,20 @@ $navheight: 10rem;
 }
 
 .sidebar {
+
+    @include breakpoint(baby-bear) {
+        margin: 4rem 0 2rem;
+    }
     p {
         font-size: 1.5rem;
         opacity: .6;
         float: right;
         clear: right;
         max-width: 27rem;
+
+        @include breakpoint(baby-bear) {
+            max-width: none;
+        }
     }
 }
 
@@ -1446,6 +1459,11 @@ a svg polygon {
     transition: .2s all ease;
     position: relative;
     z-index: 2;
+
+    .sidebar & {
+        float: none;
+        text-align: center;
+    }
     
 
     &:hover {
@@ -1726,6 +1744,11 @@ a svg polygon {
     display: block;
     clear: both;
     float: right;
+
+    @include breakpoint(baby-bear) {
+        max-width: 24rem;
+        float: none;
+    }
 }
 
 .accordion {
