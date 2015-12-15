@@ -890,6 +890,11 @@ img {
     .phase8 & {
         border-color: $phase8;
     }
+
+    .checkbox {
+        width: 4rem;
+        margin: 0 auto;
+    }
 }
 
 // this is for the row of the five personas 
@@ -1461,8 +1466,11 @@ a svg polygon {
     z-index: 2;
 
     .sidebar & {
-        float: none;
-        text-align: center;
+
+        @include breakpoint(baby-bear) {
+            float: none;
+            text-align: center;
+        }
     }
     
 
