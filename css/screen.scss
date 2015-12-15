@@ -163,6 +163,7 @@ $navheight: 10rem;
 
     .navbar-nav {
         margin-top: 2.5rem;
+        float: right;
 
         @include breakpoint(baby-bear) {
             background: #fff;
@@ -180,6 +181,12 @@ $navheight: 10rem;
             font-weight: 700;
         }
     }
+}
+
+// arrow pointing to the highlights
+.highlightarrow {
+    float: right;
+    margin-top: 1rem;
 }
 
 // shadow that sits above the main content section
