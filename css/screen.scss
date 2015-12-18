@@ -1405,6 +1405,10 @@ img {
         left: 0;
         color: $darkgrey;
 
+        @include breakpoint(baby-bear) {
+            display: none;
+        }
+
         .intro & {
             opacity: 1;
             text-align: center;
