@@ -136,6 +136,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-sitemap
   octopress-autoprefixer
 
 BUNDLED WITH
