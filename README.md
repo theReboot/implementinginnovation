@@ -1,4 +1,4 @@
 Implementing Innovation
 =========================
 
-Manual microsite running on Jekyll, and based on [Grayscale bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-grayscale/)
+This is the digital version of the printed Manual designed by [Reboot](http://reboot.org). It's running on Jekyll.
