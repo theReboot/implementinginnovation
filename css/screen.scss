@@ -1,14 +1,14 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
- 
-@import 'fonts.scss'; 
-@import 'colors.scss'; 
-@import 'breakpoints.scss'; 
+
+@import 'fonts.scss';
+@import 'colors.scss';
+@import 'breakpoints.scss';
 @import 'bootstrap3.3.2_bones.scss';
-@import 'grid.scss'; 
-@import 'tipso.scss'; 
- 
+@import 'grid.scss';
+@import 'tipso.scss';
+
 img {
 	max-width: 100%;
 }
@@ -52,7 +52,7 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
-} 
+}
 
 p, li {
     margin: 0 0 1.8rem;
@@ -320,6 +320,10 @@ ul.banner-social-buttons li {
     }
 }
 
+.small {
+	font-size: 90%;
+}
+
 footer {
     padding: 50px 15%;;
     background: $darkblue;
@@ -400,6 +404,35 @@ footer {
     background: $lightgrey;
 }
 
+fieldset {
+	margin-top: 3rem;
+}
+
+input {
+	width: 100%;
+	padding: 1rem;
+}
+
+input[type="submit"] {
+	width: auto;
+	margin: 1rem 0;
+	background: $orange;
+	transition: .15s all ease;
+	font-family: $raleway;
+	float: left;
+	clear: left;
+
+	&:hover {
+		opacity: .7;
+	}
+}
+
+input[type="checkbox"] {
+	width: auto;
+	padding: 1rem;
+	margin-right: .7rem;
+}
+
 img::selection {
     background: 0 0;
 }
@@ -446,7 +479,8 @@ img::-moz-selection {
     h4,
     h5,
     ul,
-    ol {
+    ol,
+    .form {
         margin-left: 25%;
         margin-right: 25%;
 
@@ -526,7 +560,7 @@ img::-moz-selection {
 }
 
 .step:first-line {
-    
+
     // this is only used on the manual intro page
     color: $phase1;
 
@@ -588,7 +622,7 @@ img::-moz-selection {
 .lesson {
 	background: $darkblue;
 	color: #fff;
-	padding: 7rem 0; 
+	padding: 7rem 0;
 	margin: 6rem 0 6rem;
 	clear: both;
 
@@ -908,7 +942,7 @@ img {
     }
 }
 
-// this is for the row of the five personas 
+// this is for the row of the five personas
 .personas {
 	width: 80%;
 	margin: 0 auto 4rem;
@@ -1208,7 +1242,7 @@ img {
     margin: 0 0 2rem;
 
     @include breakpoint(mama-bear) {
-        
+
     }
 
     img {
@@ -1308,7 +1342,7 @@ img {
         }
 
         .phase4 {
-            fill: $phase4; 
+            fill: $phase4;
         }
 
         .phase5 {
@@ -1422,7 +1456,7 @@ img {
 }
 
 a svg path,
-a svg polygon { 
+a svg polygon {
   transition: 150ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 150ms;
@@ -1487,7 +1521,7 @@ a svg polygon {
             text-align: center;
         }
     }
-    
+
 
     &:hover {
         // background: $lightgrey;
@@ -1645,7 +1679,7 @@ a svg polygon {
         border: 0;
         margin: 0;
         margin-bottom: 1.7rem;
-        
+
         a {
             color: $principlecolor;
             font-family: $raleway;
@@ -1662,7 +1696,7 @@ a svg polygon {
         font-style: italic;
 
         a {
-            
+
         }
     }
 
@@ -1715,8 +1749,8 @@ a svg polygon {
         margin: 0 0 1rem;
         color: $principlecolor;
         text-transform: uppercase;
-        
-        &.principles {  
+
+        &.principles {
             color: $principlecolor
         }
     }
@@ -1840,7 +1874,7 @@ a svg polygon {
     @include breakpoint(mama-bear) {
         margin-left: 15%;
         margin-right: 15%;
-    }    
+    }
     @include breakpoint(baby-bear) {
         margin-left: 5%;
         margin-right: 5%;
@@ -2044,7 +2078,7 @@ a svg polygon {
         margin-top: 2rem;
     }
 
-    
+
 }
 
 .preface {
@@ -2124,4 +2158,37 @@ a svg polygon {
     width: 100%;
     margin: 4rem 0;
     padding: 3rem 0;
+}
+
+// prevent formstack default shadow
+.fsboxshadow .fsBody .fsForm {
+	box-shadow: none !important;
+}
+
+.fsLabel {
+	float: left;
+	clear: left;
+}
+
+// targeting 'first' and 'last' name fields
+.fsSubFieldGroup {
+	clear: both;
+
+	.fsSubField {
+		width: 47%;
+		float: left;
+		margin-bottom: 2rem;
+
+		@include breakpoint('baby-bear') {
+			width: 100%;
+		}
+
+		&:first-child {
+			margin-right: 6%;
+
+			@include breakpoint('baby-bear') {
+				margin-right: auto;
+			}
+		}
+	}
 }
