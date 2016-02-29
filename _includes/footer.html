@@ -6,12 +6,14 @@
 			<p>Copyright &copy; 20{{ site.time | date: '%y' }}</p>
 		</div>
 		<div class="col-2-3">
-			{% if page.layout == 'default' %}{% else %}
-	        <img class="thebook" src="{{ site.baseurl }}/img/thebook.png" alt="Implementing Innovation book">
-	        {% endif %}
+			{% if page.layout == 'default' %}{% elsif page.nav == 'download' %}{% else %}
+      <img class="thebook" src="{{ site.baseurl }}/img/thebook.png" alt="Implementing Innovation book">
+      {% endif %}
+			{% if page.nav != 'download' %}
 			<ul>
-				<li><a target="_blank" href="{{ site.baseurl }}/assets/reboot_implementinginnovation_web.pdf">Download a PDF version<br />of the manual <em>(1.2 MB)</em></a></li>
+				<li><a href="{{ site.baseurl }}/download">Download a PDF version<br />of the manual <em>(1.2 MB)</em></a></li>
 			</ul>
+			{% endif %}
 		</div>
 	</div>
 </footer>
