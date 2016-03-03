@@ -77,6 +77,12 @@ a:focus {
     font-weight: 400;
 }
 
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .container {
     padding-left: 12%;
     padding-right: 12%;
@@ -264,6 +270,7 @@ $navheight: 10rem;
         float: right;
         clear: right;
         max-width: 27rem;
+				width: 100%;
 
         @include breakpoint(baby-bear) {
             max-width: none;
