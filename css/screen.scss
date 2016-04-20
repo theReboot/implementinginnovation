@@ -19,7 +19,7 @@ body {
     font-family: $lora;
     color: #fff;
     background-color: $darkblue;
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
+    -webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
 html {
@@ -959,6 +959,17 @@ img {
         width: 15%;
         display: inline-block;
         text-align: left;
+
+				@include breakpoint(baby-bear) {
+					width: 100%;
+					display: block;
+					margin: 0 auto 4rem;
+					text-align: center;
+
+					img {
+						max-width: 15rem;
+					}
+				}
 
         img {
             width: 100%;
