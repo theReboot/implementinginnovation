@@ -1,5 +1,15 @@
-#_site/
+_site/
+_site/*
+_site/**
 .sass-cache/
 .sass-cache/*
 .sass-cache/**
 .jekyll-metadata
+
+# Ruby
+.bundle/
+.byebug_history
+.ruby-gemset
+.ruby-version
+*.gem
+Gemfile.lock
